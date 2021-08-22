@@ -26,6 +26,14 @@ package leetcode.regular_program;
  */
 public class DivingBoard {
 
+    /**
+     * 时间复杂度：O(N)
+     * 空间复杂度：O(1)
+     * @param shorter
+     * @param longer
+     * @param k
+     * @return
+     */
     public static int[] solution1(int shorter, int longer, int k) {
         //两种特殊情况
         if (k == 0) return new int[0];

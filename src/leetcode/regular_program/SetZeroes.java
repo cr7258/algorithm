@@ -24,6 +24,11 @@ package leetcode.regular_program;
  */
 public class SetZeroes {
 
+    /**
+     * 时间复杂度：O(m*n)
+     * 空间复杂度：O(m+n)
+     * @param matrix
+     */
     public static void solution1(int[][] matrix) {
         //行数
         int n = matrix.length;

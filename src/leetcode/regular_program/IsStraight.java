@@ -18,6 +18,12 @@ package leetcode.regular_program;
  */
 public class IsStraight {
 
+    /**
+     * 时间复杂度：O(N)
+     * 空间复杂度：O(1)
+     * @param nums
+     * @return
+     */
     public static boolean solution1(int[] nums) {
         if (nums.length != 5) return false;
         //牌最大14
