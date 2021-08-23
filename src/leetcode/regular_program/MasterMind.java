@@ -18,12 +18,19 @@ package leetcode.regular_program;
  */
 public class MasterMind {
 
+    /**
+     * 时间复杂度：O(N)
+     * 空间复杂度：O(1)
+     * @param solution
+     * @param guess
+     * @return
+     */
     public static int[] solution1(String solution, String guess) {
 
         //猜中的次数
         int hit = 0;
         //伪猜中的次数
-        int fake_hit = 0;
+        int fakeHit = 0;
 
         //没猜中的用两个数组分别计算实际和猜测的颜色情况。 A ~ Z，26个英文字母，ASCII码
         int[] solutionChar = new int[26];
@@ -42,13 +49,13 @@ public class MasterMind {
         //统计伪猜中的次数
         for (int k = 0; k < 26; k++) {
             if (solutionChar[k] > guessChar[k]) {
-                fake_hit += guessChar[k];
+                fakeHit += guessChar[k];
             } else {
-                fake_hit += solutionChar[k];
+                fakeHit += solutionChar[k];
             }
         }
 
-        return new int[]{hit, fake_hit};
+        return new int[]{hit, fakeHit};
 
     }
 

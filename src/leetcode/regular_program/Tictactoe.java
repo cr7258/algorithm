@@ -15,27 +15,92 @@ package leetcode.regular_program;
  * 输出： "Pending"
  * 解释： 没有玩家获胜且仍存在空位
  * <p>
- * 思路：记录可以到达的最远的位置，一旦小于 i，就返回 false。
+ * 思路：依次判断行，列，左对角线，右对角线
  * @since 2021/8/21
  */
 public class Tictactoe {
 
-    /**
-     * 时间复杂度：O(N)
-     * 空间复杂度：O(1)
-     * @param nums
-     * @return
-     */
-    public static boolean solution1(int[] nums) {
-        int reach = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (reach < i) return false;
-            reach = Math.max(i + nums[i], reach);
+    public static String solution1(String[] board) {
+        int n = board.length;
+
+        char[][] newBoard = new char[n][n];
+        for (int i = 0; i < n; i++) {
+            newBoard[i] = board[i].toCharArray();
         }
-        return true;
+
+        //是否分出胜负
+        boolean determined = false;
+
+        //判断行
+        for (int i = 0; i < n; i++) {
+            if (newBoard[i][0] == ' ') continue;
+            determined = true;
+            for (int j = 0; j < n; j++) {
+                if (newBoard[i][0] != newBoard[i][j]) {
+                    determined = false;
+                    break;
+                }
+            }
+            if (determined) return "" + newBoard[i][0];
+        }
+        //判断列
+        for (int j = 0; j < n; j++) {
+            if (newBoard[0][j] == ' ') continue;
+            determined = true;
+            for (int i = 0; i < n; i++) {
+                if (newBoard[0][j] != newBoard[i][j]) {
+                    determined = false;
+                    break;
+                }
+            }
+            if (determined) return "" + newBoard[0][j];
+        }
+        //判断左对角线
+        if (newBoard[0][0] != ' ') {
+            int i = 1;
+            int j = 1;
+            determined = true;
+            while (i < n && j < n) {
+                if (newBoard[i][j] != newBoard[0][0]) {
+                    determined = false;
+                    break;
+                }
+                i++;
+                j++;
+            }
+            if (determined) return "" + newBoard[0][0];
+        }
+
+        //判断右对角线
+        if (newBoard[n - 1][0] != ' ') {
+            int i = n - 2;
+            int j = 1;
+            determined = true;
+            while (i >= 0 && j < n) {
+                if (newBoard[i][j] != newBoard[n - 1][0]) {
+                    determined = false;
+                    break;
+                }
+                i--;
+                j++;
+            }
+            if (determined) return "" + newBoard[n - 1][0];
+        }
+
+        //判断是否还有空格
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (newBoard[i][j] == ' ') return "Pending";
+            }
+        }
+
+        //平局
+        return "Draw";
     }
 
     public static void main(String[] args) {
-        System.out.println(solution1(new int[]{2,3,1,1,4}));
+        System.out.println(solution1(new String[]{"O X", " XO", "X O"}));
+        System.out.println(solution1(new String[]{"OOX", "XXO", "OXO"}));
+        System.out.println(solution1(new String[]{"OOX", "XXO", "OX "}));
     }
 }

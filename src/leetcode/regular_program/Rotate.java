@@ -14,6 +14,7 @@ package leetcode.regular_program;
  * 思路：
  * 方法1.借助辅助数组（题目要求原地，辅助不符合要求）
  * 方法2.用翻转代替旋转，先上下翻转，然后主对角线翻转
+ * 方法3.标准旋转，先确定最外层4个点的位置，然后层层推导
  * @since 2021/8/22
  */
 public class Rotate {
@@ -36,7 +37,7 @@ public class Rotate {
     }
 
     /**
-     * 用翻转代替旋转，先上下翻转，然后主对角线翻转
+     * 原地，用翻转代替旋转，先上下翻转，然后主对角线翻转
      * 时间复杂度：O(N^2)，其中 N 是 matrix 的边长。对于每一次翻转操作，我们都需要枚举矩阵中一半的元素。
      * 空间复杂度：O(1)，一个 temp 变量
      *
@@ -65,6 +66,59 @@ public class Rotate {
             }
         }
     }
+
+    /**
+     * 原地，标准旋转，先确定最外层4个点的位置，从外圈 -> 内圈
+     * 时间复杂度：O(N^2)，其中 N 是 matrix 的边长
+     * 空间复杂度：O(1)
+     *
+     * @param matrix
+     */
+    public static void solution3(int[][] matrix) {
+
+        int n = matrix.length;
+        //起始点，最左侧端点
+        int s1_i = 0;
+        int s1_j = 0;
+
+        //每一圈循环，从外圈开始
+        while (n > 1) {
+            int s2_i = s1_i;
+            int s2_j = s1_j + n - 1;
+            int s3_i = s1_i + n - 1;
+            int s3_j = s1_j + n - 1;
+            int s4_i = s1_i + n - 1;
+            int s4_j = s1_j;
+
+            //外圈的偏移
+            for (int move = 0; move < n - 1; move++) {
+                int p1_i = s1_i;
+                int p1_j = s1_j + move;
+                int p2_i = s2_i + move;
+                int p2_j = s2_j;
+                int p3_i = s3_i;
+                int p3_j = s3_j - move;
+                int p4_i = s4_i - move;
+                int p4_j = s4_j;
+                swap4(matrix, p1_i, p1_j, p2_i, p2_j, p3_i, p3_j, p4_i, p4_j);
+            }
+
+            s1_i++;
+            s1_j++;
+            //一次交换一边减少2格子
+            n -= 2;
+        }
+    }
+
+    //交换4个方格，顺时针90度
+    public static void swap4(int[][] matrix, int p1_i, int p1_j, int p2_i, int p2_j, int p3_i, int p3_j, int p4_i, int p4_j) {
+        int temp = matrix[p1_i][p1_j];
+        matrix[p1_i][p1_j] = matrix[p4_i][p4_j];
+        matrix[p4_i][p4_j] = matrix[p3_i][p3_j];
+        matrix[p3_i][p3_j] = matrix[p2_i][p2_j];
+        matrix[p2_i][p2_j] = temp;
+    }
+
 
     public static void main(String[] args) {
         int[][] matrix1 = new int[][]{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};

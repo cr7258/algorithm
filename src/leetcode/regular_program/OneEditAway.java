@@ -23,6 +23,13 @@ package leetcode.regular_program;
  */
 public class OneEditAway {
 
+    /**
+     * 时间复杂度：O(N)
+     * 空间复杂度：O(1)
+     * @param first
+     * @param second
+     * @return
+     */
     public static boolean solution1(String first, String second) {
         int n = first.length();
         int m = second.length();
