@@ -3,6 +3,9 @@ package leetcode.linkedlist;
 /**
  * @author chengzw
  * @description 移除链表元素，https://leetcode-cn.com/problems/remove-linked-list-elements/
+ *
+ * 给你一个链表的头节点 head 和一个整数 val ，请你删除链表中所有满足 Node.val == val 的节点，并返回 新的头节点 。
+ *
  * @since 2021/8/25
  */
 public class RemoveElements {
@@ -44,8 +47,6 @@ public class RemoveElements {
      * @return
      */
     public ListNode solution2(ListNode head, int val) {
-        //如果头节点为空
-        if (head == null) return null;
 
         //新的链表添加不等于 val 的元素，新链表头节点
         ListNode newNode = new ListNode();

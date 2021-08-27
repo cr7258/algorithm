@@ -3,14 +3,19 @@ package leetcode.linkedlist;
 /**
  * @author chengzw
  * @description 删除排序链表中的重复元素，https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/
+ *
+ * 存在一个按升序排列的链表，给你这个链表的头节点 head ，请你删除所有重复的元素，使每个元素只出现一次 。
+ * 返回同样按升序排列的结果链表。
  * @since 2021/8/25
  */
 public class DeleteDuplicates {
 
+    /**
+     * 思路：使用新链表添加元素，每个相同的元素只添加一次，注意这里元素是升序的，比较好判断
+     * @param head
+     * @return
+     */
     public ListNode solution1(ListNode head) {
-
-        //如果头节点为空
-        if (head == null) return null;
 
         //记录当前val，是升序排列的
         int val = -101;
