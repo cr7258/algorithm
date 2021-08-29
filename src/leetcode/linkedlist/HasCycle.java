@@ -22,6 +22,7 @@ public class HasCycle {
     public static boolean solution1(ListNode head) {
         if (head == null) return false;
         ListNode slow = head;
+        //快指针要先走一步，避免一开始 slow == fast
         ListNode fast = head.next;
         while (fast != null && fast.next != null & slow != fast) {
             slow = slow.next;

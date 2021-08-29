@@ -14,20 +14,20 @@ package leetcode.linkedlist;
 public class GetKthFromEnd {
 
     /**
-     * 思路：构造快慢指针，这两个指针之间相距k个距离，当快指针走到尾了，慢指针正好在倒数k的位置。
+     * 思路：构造快慢指针，快指针先走到第k个节点，这两个指针之间相距k-1个距离，当快指针走到尾了，慢指针正好在倒数k的位置。
      *
      * @param head
      * @param k
      * @return
      */
     public static ListNode solution1(ListNode head, int k) {
-        //快指针先走k步
+        //快指针先走到第k个节点
         ListNode fast = head;
         //记录走了几步
         int count = 0;
         while (fast != null) {
             count++;
-            //当走了k步，跳出循环
+            //当走了第k个节点，跳出循环
             if (count == k) break;
             fast = fast.next;
         }

@@ -14,7 +14,6 @@ public class OddEvenList {
 
     /**
      * 思路：两个新链表分别添加奇数节点和偶数节点，最后把偶数节点接在奇数节点后面
-     * 但是不满足算法的空间复杂度应为 O(1) 的要求
      *
      * @param head
      * @return
