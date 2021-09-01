@@ -1,5 +1,8 @@
 package leetcode.stack;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 /**
  * @author chengzw
  * @description 用队列实现栈，https://leetcode-cn.com/problems/implement-stack-using-queues/
@@ -28,4 +31,71 @@ package leetcode.stack;
  * @since 2021/9/1
  */
 public class MyStack {
+
+    /**
+     * 思路：入栈的时候直接入队列，出栈的时候记住最后一个值，还原的时候去掉最后一个值
+     */
+    public static class MyStack1 {
+        private Queue<Integer> queue = new LinkedList<Integer>();
+        private Queue<Integer> tmpQueue = new LinkedList<Integer>();
+
+        public MyStack1() {
+
+        }
+
+        //入栈的时候直接入队
+        public void push(int x) {
+            queue.add(x);
+        }
+
+        //出栈的时候倒腾两个队列
+        public int pop() {
+            //范围0~9
+            int last = -1;
+            //记录元素数量
+            int count = 0;
+            while(!queue.isEmpty()){
+                count ++;
+                last = queue.poll();
+                tmpQueue.add(last);
+            }
+
+            //还原队列
+            for(int i=0;i<count-1;i++){
+                queue.add(tmpQueue.poll());
+            }
+            //把临时队列的弹出的元素去掉
+            tmpQueue.poll();
+            return last;
+        }
+
+        public int top() {
+            //范围0~9
+            int last = -1;
+            while(!queue.isEmpty()){
+                last = queue.poll();
+                tmpQueue.add(last);
+            }
+            //还原队列
+            while(!tmpQueue.isEmpty()){
+                queue.add(tmpQueue.poll());
+            }
+            return last;
+        }
+
+        public boolean empty() {
+            return queue.isEmpty();
+        }
+    }
+
+    public static void main(String[] args) {
+        MyStack1 obj = new MyStack1();
+        obj.push(1);
+        obj.push(2);
+        System.out.println(obj.top());
+        System.out.println(obj.pop());
+        System.out.println(obj.top());
+        System.out.println(obj.pop());
+        System.out.println(obj.empty());
+    }
 }
