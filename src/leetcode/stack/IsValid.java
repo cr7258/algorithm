@@ -22,35 +22,39 @@ import java.util.Stack;
  * @since 2021/9/1
  */
 public class IsValid {
+    /**
+     * 思路1：遇到左边括号就压入对应的右边括号，当遇到右边括号时判断和栈顶元素是否相同
+     * @param s
+     * @return
+     */
     public static boolean solution1(String s) {
-        //队列存放前一半元素
-        Queue<Character> queue = new LinkedList<>();
-        //栈存放后一半元素
+        //特殊情况
+        if (s.isEmpty()) return true;
+
         Stack<Character> stack = new Stack<>();
-
-        int length = s.length();
-        //如果字符串长度是奇数直接返回无效
-        if (length % 2 == 1) return false;
-
-        for (int i = 0; i < length / 2; i++) {
-            queue.add(s.charAt(i));
-            stack.push(s.charAt(length - 1 - i));
+        //遇到左边括号压入对应的右边括号
+        for (char c : s.toCharArray()) {
+            if (c == '(') {
+                stack.push(')');
+            } else if (c == '{') {
+                stack.push('}');
+            } else if (c == '[') {
+                stack.push(']');
+                //当遇到右边括号时，看是否和栈顶相同
+            } else if (stack.empty() || stack.pop() != c) {
+                return false;
+            }
         }
-
-        //比较元素
-        while (!queue.isEmpty()) {
-            int val1 = queue.poll();
-            int val2 = stack.pop();
-            if (!compare(val1, val2)) return false;
+        if (stack.empty()) {
+            return true;
         }
-        return true;
-    }
-
-    public static boolean compare(int val1, int val2) {
-        return (val1 == '(' && val2 == ')') || (val1 == '{' && val2 == '}') || (val1 == '[' && val2 == ']');
+        return false;
     }
 
     public static void main(String[] args) {
         System.out.println(solution1("()"));
+        System.out.println(solution1("{[()]}"));
+        System.out.println(solution1("[()]}"));
+        System.out.println(solution1("[](){}"));
     }
 }
