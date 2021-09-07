@@ -18,6 +18,11 @@ import java.util.Stack;
  */
 public class RemoveDuplicates {
 
+    /**
+     * 思路1：遇到相同的就弹出栈顶消除
+     * @param s
+     * @return
+     */
     public static String solution1(String s) {
         Stack<Character> stack = new Stack<>();
         int n = s.length();
