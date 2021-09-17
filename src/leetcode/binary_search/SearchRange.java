@@ -16,12 +16,16 @@ package leetcode.binary_search;
  * @since 2021/9/14
  */
 
-/**
- * 思路：1.找第一个元素时，如果 nums[mid] == target，向前探测
- *      2.找最后一个元素时，如果 nums[mid] == target，向后探测
- */
 public class SearchRange {
-    public int[] searchRange(int[] nums, int target) {
+
+    /**
+     * 思路：1.找第一个元素时，如果 nums[mid] == target，向前探测
+     *      2.找最后一个元素时，如果 nums[mid] == target，向后探测
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int[] solution1(int[] nums, int target) {
         int first = -1;
         int last = -1;
         //获取第一个位置
@@ -65,6 +69,41 @@ public class SearchRange {
             }
         }
 
+        return new int[]{first,last};
+    }
+
+    /**
+     * 思路2：找到第一个元素的同时，往后找最后一个元素，一次循环搞定
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int[] solution2(int[] nums, int target){
+        int low = 0;
+        int high = nums.length - 1;
+        int first = -1;
+        int last = -1;
+        while (low <= high){
+            int mid = low + (high - low)/2;
+            if(nums[mid] == target){
+                //找元素第一个出现的位置
+                if(mid == 0 || nums[mid - 1] != target){
+                    first = mid;
+                    //继续找最后一个元素
+                    while (nums[mid + 1] == target){
+                        mid ++;
+                    }
+                    last = mid;
+                    break;
+                }else {
+                    high = mid -1;
+                }
+            }else if(nums[mid] < target){
+                low = mid + 1;
+            }else{
+                high = mid -1;
+            }
+        }
         return new int[]{first,last};
     }
 }
