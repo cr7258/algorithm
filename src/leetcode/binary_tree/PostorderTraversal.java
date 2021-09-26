@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * @author chengzw
- * @description 二叉树的后续遍历，https://leetcode-cn.com/problems/binary-tree-postorder-traversal/
+ * @description 二叉树的后序遍历，https://leetcode-cn.com/problems/binary-tree-postorder-traversal/
  * @since 2021/9/21
  */
 public class PostorderTraversal {
