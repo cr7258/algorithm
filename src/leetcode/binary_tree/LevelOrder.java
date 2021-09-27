@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * 思路：用队列
+ * 思路：二叉树的层序遍历使用队列
  * 把元素加入队列，出队的时候，记录节点的值，然后把该节点的子节点入队
  */
 public class LevelOrder {

@@ -30,7 +30,7 @@ public class levelOrderXNode {
                 int childSize = node.children.size();
                 //将该节点的子节点入队
                 for (int j = 0; j < childSize; j++) {
-                    queue.add(node.children.get(i));
+                    queue.add(node.children.get(j));
                 }
             }
             result.add(curLevelResult);
