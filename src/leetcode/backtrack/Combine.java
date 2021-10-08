@@ -25,42 +25,40 @@ import java.util.List;
 public class Combine {
 
     public List<List<Integer>> result = new ArrayList<>();
-    int phase = 0;
 
     public List<List<Integer>> combine(int n, int k) {
-        int nums[] = new int[n];
-        for (int i = 1; i <= nums.length; i++) {
-            nums[i-1] = i;
-        }
-        phase = k;
-        backtrack(nums, 0, new ArrayList<Integer>());
+        backtrack(n, k, 1, new ArrayList<Integer>());
         return result;
     }
 
     /**
-     * @param nums 可选列表
-     * @param k    决策阶段
+     * @param n    1~n 的数
+     * @param k    取 k 个数
+     * @param step 决策阶段
      * @param path 路径
      */
-    public void backtrack(int[] nums, int k, List<Integer> path) {
+    public void backtrack(int n, int k, int step, List<Integer> path) {
 
-        //结束条件
-        if (k == phase) {
+        //结束条件，取到 k 个数
+        if (path.size() == k) {
             result.add(new ArrayList<>(path));
             return;
         }
 
-        for (int i = 0; i < nums.length; i++) {
-            //找原先没有添加到 path 中的数
-            if (path.contains(nums[i])) {
-                continue;
-            }
-            //做选择
-            path.add(nums[i]);
-            //递归
-            backtrack(nums, k + 1, path);
-            //撤销选择
-            path.remove(path.size() - 1);
+        //结束条件，如果已经超过 1~n 的范围
+        if (step == n + 1) {
+            return;
         }
+
+        //不选
+        backtrack(n, k, step + 1, path);
+
+        //选一个数
+        path.add(step);
+        //递归
+        backtrack(n, k, step + 1, path);
+
+        //撤销选择
+        path.remove(path.size() - 1);
     }
 }
