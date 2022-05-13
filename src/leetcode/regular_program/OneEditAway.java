@@ -16,7 +16,8 @@ package leetcode.regular_program;
  * second = "pal"
  * 输出: False
  * <p>
- * 思路：1.两个字符串的长度不能超过1。
+ * 思路：
+ * 1.两个字符串的长度不能超过1。
  * 2.按照字符依次往后比较，允许有1次不同（插入或者删除）。
  * 3.当发现不同的字符以后，后面的都必须相同。
  * @since 2021/8/20
@@ -36,7 +37,6 @@ public class OneEditAway {
 
         //两个字符串的长度不能超过1
         if (Math.abs(n - m) > 1) return false;
-
 
         //两个字符串的指针
         int i = 0;
