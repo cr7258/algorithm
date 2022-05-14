@@ -12,6 +12,10 @@ leetcode: https://leetcode.cn/problems/one-away-lcci/submissions/
 1.两个字符长度不能超过 1
 2.按照字符依次往后比较，允许有1次不同（插入或者删除）
 3.当发现不同时，后面的字符必须完全相同
+
+时间复杂度：O(m + n)，其中 m 和 n 分别是字符串 first 和 second 的长度。当 ∣m−n∣≤1 时，需要遍历两个字符串各一次。
+空间复杂度：O(1)。
+
 */
 func oneEditAway(first string, second string) bool {
 	n := len(first)
