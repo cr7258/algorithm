@@ -11,7 +11,7 @@ leetcode: https://leetcode.cn/problems/container-with-most-water
 
 /**
 暴力解法：会超时
-时间复杂度: O(N^2)
+时间复杂度: O(n^2)
 空间复杂度: O(1)
 */
 func maxArea1(height []int) int {
@@ -40,6 +40,8 @@ func max(x, y int) int {
 思路：
 1.相同情况下两边远越越好
 2.左右指针分别从两边出发，每次移动较短的指针，判断面积是否增大
+时间复杂度: O(n)
+空间复杂度: O(1)
 */
 func maxArea2(height []int) int {
 	maxarea := 0
