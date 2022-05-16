@@ -4,7 +4,7 @@ package linkedlist
  * @description 移除链表元素
  * @author chengzw
  * @since 2022/5/15
- * @Link https://leetcode.cn/problems/remove-linked-list-elements/
+ * @link https://leetcode.cn/problems/remove-linked-list-elements/
  */
 
 /**
@@ -37,6 +37,29 @@ func removeElements(head *ListNode, val int) *ListNode {
 		} else {
 			prev = prev.Next
 		}
+	}
+	return newHead.Next
+}
+
+/**
+思路：链表万能写法
+1.如果 Val == val，就将该节点接在新链表上
+时间复杂度：O(n)，其中 n 是链表的长度。需要遍历链表一次。
+空间复杂度：O(1)。
+*/
+func removeElements2(head *ListNode, val int) *ListNode {
+	newHead := new(ListNode)
+	tail := newHead
+	p := head
+	for p != nil {
+		// 临时记住 p 的下一个节点
+		tmp := p.Next
+		if p.Val != val {
+			p.Next = nil
+			tail.Next = p
+			tail = p
+		}
+		p = tmp
 	}
 	return newHead.Next
 }

@@ -4,7 +4,7 @@ package greedy
  * @description 45. 跳跃游戏 II
  * @author chengzw
  * @since 2022/5/15
- * @Link https://leetcode.cn/problems/jump-game-ii/
+ * @link https://leetcode.cn/problems/jump-game-ii/
  */
 
 /**

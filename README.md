@@ -3,6 +3,7 @@
 |题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[剑指 Offer 50. 第一个只出现一次的字符](https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) | [Go](go/leetcode/hashtable/first_uniq_char.go)<br> [Java](java/src/leetcode/hashtable/FirstUniqChar.java)  | 简单| O(n)  | O(1)   | 
+|[146. LRU 缓存](https://leetcode.cn/problems/lru-cache/) | [Go](go/leetcode/hashtable/lru_cache.go)<br> [Java](java/src/leetcode/hashtable/LRUCache.java)  | 中等| O(n)  | O(1)   | 
 
 ## 双指针
 题目|解法|难度|时间复杂度|空间复杂度|
@@ -14,6 +15,7 @@
 |题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[203. 移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/) | [Go](go/leetcode/linkedlist/remove_elements.go)<br> [Java](java/src/leetcode/linkedlist/RemoveElements.java)  | 简单| O(n)  | O(1)   | 
+|[876. 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) | [Go](go/leetcode/linkedlist/middle_node.go)<br> [Java](java/src/leetcode/linkedlist/MiddleNode.java)  | 简单| O(n)  | O(1)   |
 
 ## 递归
 |题目|解法|难度|时间复杂度|空间复杂度|

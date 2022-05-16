@@ -4,7 +4,7 @@ package main
  * @description 二分查找
  * @author chengzw
  * @since 2022/5/15
- * @Link https://leetcode.cn/problems/binary-search/
+ * @link https://leetcode.cn/problems/binary-search/
  */
 
 /**
