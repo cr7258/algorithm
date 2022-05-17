@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /**
  * @author chengzw
  * @description LRU 缓存
@@ -42,17 +44,19 @@ lRUCache.get(4);    // 返回 4
  */
 
 type LRUCache struct {
-	capacity   int          // 容量
-	size       int          // 已使用空间
-	head, tail *DLinkedNode // 头节点，尾节点
-	cache      map[int]*DLinkedNode
+	capacity   int                  // 容量
+	size       int                  // 已使用空间
+	head, tail *DLinkedNode         // 头节点，尾节点
+	cache      map[int]*DLinkedNode // 哈希表
 }
 
+// 双向链表数据结构
 type DLinkedNode struct {
 	key, value int
-	prev, next *DLinkedNode
+	prev, next *DLinkedNode // 前指针，后指针
 }
 
+// 创建一个新的节点
 func initDLinkedNode(key, value int) *DLinkedNode {
 	return &DLinkedNode{
 		key:   key,
@@ -60,13 +64,15 @@ func initDLinkedNode(key, value int) *DLinkedNode {
 	}
 }
 
+// 初始化 LRU 结构
 func Constructor(capacity int) LRUCache {
 	l := LRUCache{
-		cache:    map[int]*DLinkedNode{},
-		head:     initDLinkedNode(0, 0),
-		tail:     initDLinkedNode(0, 0),
-		capacity: capacity,
+		cache:    map[int]*DLinkedNode{}, //  哈希表
+		head:     initDLinkedNode(0, 0),  // 虚拟头节点
+		tail:     initDLinkedNode(0, 0),  // 虚拟尾节点
+		capacity: capacity,               // 容量
 	}
+	// 虚拟头节点和虚拟尾节点互连
 	l.head.next = l.tail
 	l.tail.prev = l.head
 	return l
@@ -93,7 +99,9 @@ func (this *LRUCache) Put(key int, value int) {
 		if this.size > this.capacity {
 			// 得到删除的 key
 			removed := this.removeTail()
+			// 根据得到的 key 删除哈希表中的元素
 			delete(this.cache, removed.key)
+			// 减少已使用容量
 			this.size--
 		}
 		// 插入哈希表
@@ -118,7 +126,7 @@ func (this *LRUCache) addToHead(node *DLinkedNode) {
 	this.head.next = node
 }
 
-// 移除节点
+// 删除该节点
 func (this *LRUCache) removeNode(node *DLinkedNode) {
 	// 节点的 next 节点的 prev 指向节点的 prev
 	node.next.prev = node.prev
@@ -126,15 +134,41 @@ func (this *LRUCache) removeNode(node *DLinkedNode) {
 	node.prev.next = node.next
 }
 
-// 移动节点到头部，先删除，再添加
+// 移动到头部，也就是当前位置删除，再添加到头部
 func (this *LRUCache) moveToHead(node *DLinkedNode) {
 	this.removeNode(node)
 	this.addToHead(node)
 }
 
-// 移除尾部节点
+// 移除尾部节点，淘汰最久未使用的
 func (this *LRUCache) removeTail() *DLinkedNode {
 	node := this.tail.prev // 虚拟尾节点的上一个才是真正的尾节点
 	this.removeNode(node)
 	return node
+}
+
+// 打印链表（解题不需要此方法，只是为了显示效果）
+func (this *LRUCache) printDLinkNode() {
+	p := this.head
+	for p != nil {
+		fmt.Printf("key: %d, value: %d\n", p.key, p.value)
+		p = p.next
+	}
+}
+func main() {
+	lru := Constructor(3)
+	fmt.Println("=========================== 插入 3 个节点 ===========================")
+	lru.Put(1, 100)
+	lru.Put(2, 200)
+	lru.Put(3, 300)
+	fmt.Println("=========================== 打印当前链表 ===========================")
+	lru.printDLinkNode()
+
+	fmt.Println("=========================== 插入第 4 个节点，LRU 缓存淘汰尾部节点 ===========================")
+	lru.Put(4, 400)
+	lru.printDLinkNode()
+
+	fmt.Println("=========================== 获取 key 是 2 的节点，更新 LRU 缓存，将会移动至链表头部 ===========================")
+	lru.Get(2)
+	lru.printDLinkNode()
 }
