@@ -18,6 +18,7 @@
 |[203. 移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/) | [Go](go/leetcode/linkedlist/remove_elements.go)<br> [Java](java/src/leetcode/linkedlist/RemoveElements.java)  | 简单| O(n)  | O(1)   | 
 |[876. 链表的中间结点](https://leetcode.cn/problems/middle-of-the-linked-list/) | [Go](go/leetcode/linkedlist/middle_node.go)<br> [Java](java/src/leetcode/linkedlist/MiddleNode.java)  | 简单| O(n)  | O(1)   |
 |[83. 删除排序链表中的重复元素](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) | [Go](go/leetcode/linkedlist/delete_duplicates.go)<br> [Java](java/src/leetcode/linkedlist/DeleteDuplicates.java)  | 简单| O(n)  | O(1)   |
+|[剑指 Offer 25. 合并两个排序的链表](https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/) | [Go](go/leetcode/linkedlist/merge_two_lists.go)<br> [Java](java/src/leetcode/linkedlist/MergeTwoLists.java)  | 简单| O(n+m)  | O(1)   |
 
 ## 递归
 |题目|解法|难度|时间复杂度|空间复杂度|
@@ -39,3 +40,4 @@
 题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) | [Go](go/leetcode/greedy/jump.go)<br> [Java](java/src/leetcode/greedy/Jump.java)  | 简单| O(n)  | O(1)   | 
+|[121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [Go](go/leetcode/greedy/max_profit.go)<br> [Java](java/src/leetcode/greedy/MaxProfit.java)  | 简单| O(n)  | O(1)   |

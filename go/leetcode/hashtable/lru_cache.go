@@ -43,6 +43,7 @@ lRUCache.get(4);    // 返回 4
  * 空间复杂度：O(n), n 是 LRU 缓存容量
  */
 
+// LRU 数据结构
 type LRUCache struct {
 	capacity   int                  // 容量
 	size       int                  // 已使用空间
@@ -78,6 +79,7 @@ func Constructor(capacity int) LRUCache {
 	return l
 }
 
+// 获取元素
 func (this *LRUCache) Get(key int) int {
 	// 如果没有在哈希表中找到 key
 	if _, ok := this.cache[key]; !ok {
@@ -89,6 +91,7 @@ func (this *LRUCache) Get(key int) int {
 	return node.value
 }
 
+// 插入元素
 func (this *LRUCache) Put(key int, value int) {
 	// 先去哈希表中查询
 	// 如果 key 不存在，创建一个新的节点
@@ -97,7 +100,7 @@ func (this *LRUCache) Put(key int, value int) {
 		// 如果达到容量限制，链表删除尾部节点，哈希表删除元素
 		this.size++
 		if this.size > this.capacity {
-			// 得到删除的 key
+			// 得到删除的节点
 			removed := this.removeTail()
 			// 根据得到的 key 删除哈希表中的元素
 			delete(this.cache, removed.key)
@@ -116,21 +119,19 @@ func (this *LRUCache) Put(key int, value int) {
 
 // 将节点添加到头部
 func (this *LRUCache) addToHead(node *DLinkedNode) {
-	// 新节点 prev 指向头节点
+	// 新节点指向前后节点
 	node.prev = this.head
-	// 新节点 next 指向原头节点的 next 节点
 	node.next = this.head.next
-	// 原头节点的 next 节点的 prev 指向新节点
+
+	// 前后节点指向新节点
 	this.head.next.prev = node
-	// 头节点 next 指向新节点
 	this.head.next = node
 }
 
 // 删除该节点
 func (this *LRUCache) removeNode(node *DLinkedNode) {
-	// 节点的 next 节点的 prev 指向节点的 prev
+	// 修改该节点前后节点的指针，不再指向该节点
 	node.next.prev = node.prev
-	// 节点的 prev 节点的 next 指向节点的 next
 	node.prev.next = node.next
 }
 
@@ -148,7 +149,7 @@ func (this *LRUCache) removeTail() *DLinkedNode {
 }
 
 // 打印链表（解题不需要此方法，只是为了显示效果）
-func (this *LRUCache) printDLinkNode() {
+func (this *LRUCache) printDLinkedNode() {
 	p := this.head
 	for p != nil {
 		fmt.Printf("key: %d, value: %d\n", p.key, p.value)
@@ -162,13 +163,13 @@ func main() {
 	lru.Put(2, 200)
 	lru.Put(3, 300)
 	fmt.Println("=========================== 打印当前链表 ===========================")
-	lru.printDLinkNode()
+	lru.printDLinkedNode()
 
 	fmt.Println("=========================== 插入第 4 个节点，LRU 缓存淘汰尾部节点 ===========================")
 	lru.Put(4, 400)
-	lru.printDLinkNode()
+	lru.printDLinkedNode()
 
-	fmt.Println("=========================== 获取 key 是 2 的节点，更新 LRU 缓存，将会移动至链表头部 ===========================")
+	fmt.Println("=========================== 获取 key2 节点，更新 LRU 缓存，将会移动至链表头部 ===========================")
 	lru.Get(2)
-	lru.printDLinkNode()
+	lru.printDLinkedNode()
 }
