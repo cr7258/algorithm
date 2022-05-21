@@ -20,6 +20,12 @@
 |[83. 删除排序链表中的重复元素](https://leetcode.cn/problems/remove-duplicates-from-sorted-list/) | [Go](go/leetcode/linkedlist/delete_duplicates.go)<br> [Java](java/src/leetcode/linkedlist/DeleteDuplicates.java)  | 简单| O(n)  | O(1)   |
 |[剑指 Offer 25. 合并两个排序的链表](https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/) | [Go](go/leetcode/linkedlist/merge_two_lists.go)<br> [Java](java/src/leetcode/linkedlist/MergeTwoLists.java)  | 简单| O(n+m)  | O(1)   |
 |[2. 两数相加](https://leetcode.cn/problems/add-two-numbers/) | [Go](go/leetcode/linkedlist/add_two_numbers.go)<br> [Java](java/src/leetcode/linkedlist/AddTwoNumbers.java)  | 中等| O(n+m)  | O(1)   |
+|[206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [Go](go/leetcode/linkedlist/reverse_list.go)<br> [Java](java/src/leetcode/linkedlist/ReverseList.java)  | 中等| O(n)  | O(1)   |
+
+## 排序
+|题目|解法|难度|时间复杂度|空间复杂度|
+|---|---|---|---|---|
+|[56. 合并区间](https://leetcode.cn/problems/merge-intervals/) | [Go](go/leetcode/sort/merge.go)<br> [Java](java/src/leetcode/sort/Merge.java)  | 简单| O(nlogn)  |O(logn)   |
 
 ## 递归
 |题目|解法|难度|时间复杂度|空间复杂度|
