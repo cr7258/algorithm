@@ -5,6 +5,7 @@
 |[剑指 Offer 50. 第一个只出现一次的字符](https://leetcode.cn/problems/di-yi-ge-zhi-chu-xian-yi-ci-de-zi-fu-lcof/) | [Go](go/leetcode/hashtable/first_uniq_char.go)<br> [Java](java/src/leetcode/hashtable/FirstUniqChar.java)  | 简单| O(n)  | O(1)   | 
 |[146. LRU 缓存](https://leetcode.cn/problems/lru-cache/) | [Go](go/leetcode/hashtable/lru_cache.go)<br> [Java](java/src/leetcode/hashtable/LRUCache.java)  | 中等| O(1)  | O(1)   | 
 |[13. 罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/) | [Go](go/leetcode/hashtable/roman_to_Int.go)<br> [Java](java/src/leetcode/hashtable/RomanToInt.java)  | 中等| O(n)  | O(1)   | 
+|[1. 两数之和](https://leetcode.cn/problems/two-sum/) | [Go](go/leetcode/hashtable/two_sum.go)<br> [Java](java/src/leetcode/hashtable/TwoSum.java)  | 中等| O(n)  | O(n)   |
 
 ## 双指针
 题目|解法|难度|时间复杂度|空间复杂度|

@@ -14,6 +14,12 @@ import "fmt"
 输出：[0,1]
 */
 
+/**
+ * 思路：使用哈希表存储 {已经遍历到的元素,该元素的下标}，如果哈希表中能找到 target - nums[i]，则返回 [哈希表中元素下标,i]
+ * 时间复杂度：O(n)
+ * 空间复杂度：O(n)
+ */
+
 func twoSum(nums []int, target int) []int {
 	//创建一个 map，对于每一个 num，首先查询 map 中是否存在 target-num
 	//如果不存在，将 num 插入到 map 中
