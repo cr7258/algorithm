@@ -22,6 +22,8 @@
 |[剑指 Offer 25. 合并两个排序的链表](https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/) | [Go](go/leetcode/linkedlist/merge_two_lists.go)<br> [Java](java/src/leetcode/linkedlist/MergeTwoLists.java)  | 简单| O(n+m)  | O(1)   |
 |[2. 两数相加](https://leetcode.cn/problems/add-two-numbers/) | [Go](go/leetcode/linkedlist/add_two_numbers.go)<br> [Java](java/src/leetcode/linkedlist/AddTwoNumbers.java)  | 中等| O(n+m)  | O(1)   |
 |[206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [Go](go/leetcode/linkedlist/reverse_list.go)<br> [Java](java/src/leetcode/linkedlist/ReverseList.java)  | 中等| O(n)  | O(1)   |
+|[328. 奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/) | [Go](go/leetcode/linkedlist/odd_even_list.go)<br> [Java](java/src/leetcode/linkedlist/OddEvenList.java)  | 中等| O(n)  | O(1)   |
+|[19. 删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | [Go](go/leetcode/linkedlist/remove_nth_from_end.go)<br> [Java](java/src/leetcode/linkedlist/RemoveNthFromEnd.java)  | 中等| O(n)  | O(1)   |
 
 ## 排序
 |题目|解法|难度|时间复杂度|空间复杂度|
