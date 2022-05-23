@@ -34,7 +34,7 @@ public class ReverseKGroup {
                 tail.next = p;
                 return dummyNode.next;
             } else {  //反转k个节点的链表
-                //p传入reverseList以后回变化，先用tmp保存
+                //p传入reverseList以后会变化，先用tmp保存
                 ListNode tmp = q.next;
                 ListNode[] nodes = reverseList(p, q);
                 tail.next = nodes[0];
@@ -45,13 +45,10 @@ public class ReverseKGroup {
         return dummyNode.next;
     }
 
-
     //反转链表
     //传入k个节点的链表的头节点和尾节点
     //返回反转的链表头节点和尾节点
     public static ListNode[] reverseList(ListNode head, ListNode tail) {
-
-
         //p是k个长度的链表的遍历指针
         ListNode p = head;
         //头节点

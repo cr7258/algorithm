@@ -24,6 +24,7 @@
 |[206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [Go](go/leetcode/linkedlist/reverse_list.go)<br> [Java](java/src/leetcode/linkedlist/ReverseList.java)  | 中等| O(n)  | O(1)   |
 |[328. 奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/) | [Go](go/leetcode/linkedlist/odd_even_list.go)<br> [Java](java/src/leetcode/linkedlist/OddEvenList.java)  | 中等| O(n)  | O(1)   |
 |[19. 删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | [Go](go/leetcode/linkedlist/remove_nth_from_end.go)<br> [Java](java/src/leetcode/linkedlist/RemoveNthFromEnd.java)  | 中等| O(n)  | O(1)   |
+|[25. K 个一组翻转链表](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | [Go](go/leetcode/linkedlist/reverse_k_group.go)<br> [Java](java/src/leetcode/linkedlist/ReverseKGroup.java)  | 困难| O(n)  | O(1)   |
 
 ## 排序
 |题目|解法|难度|时间复杂度|空间复杂度|
@@ -39,6 +40,7 @@
 题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[704. 二分查找](https://leetcode.cn/problems/binary-search/) | [Go](go/leetcode/binary_search/search.go)<br> [Java](java/src/leetcode/binary_search/Search.java)  | 简单| O(logn)  | O(1)   | 
+|[374. 猜数字大小](https://leetcode.cn/problems/guess-number-higher-or-lower/) | [Go](go/leetcode/binary_search/guess_number.go)<br> [Java](java/src/leetcode/binary_search/GuessNumber.java)  | 简单| O(logn)  | O(1)   |
 
 ## 动态规划
 
