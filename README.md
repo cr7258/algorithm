@@ -6,6 +6,7 @@
 |[146. LRU 缓存](https://leetcode.cn/problems/lru-cache/) | [Go](go/leetcode/hashtable/lru_cache.go)<br> [Java](java/src/leetcode/hashtable/LRUCache.java)  | 中等| O(1)  | O(1)   | 
 |[13. 罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/) | [Go](go/leetcode/hashtable/roman_to_Int.go)<br> [Java](java/src/leetcode/hashtable/RomanToInt.java)  | 中等| O(n)  | O(1)   | 
 |[1. 两数之和](https://leetcode.cn/problems/two-sum/) | [Go](go/leetcode/hashtable/two_sum.go)<br> [Java](java/src/leetcode/hashtable/TwoSum.java)  | 中等| O(n)  | O(n)   |
+|[15. 三数之和](https://leetcode.cn/problems/3sum/) | [Go](go/leetcode/hashtable/three_num.go)<br> [Java](java/src/leetcode/hashtable/ThreeSum.java)  | 中等| O(n^2)  | O(n)   |
 
 ## 双指针
 题目|解法|难度|时间复杂度|空间复杂度|
@@ -25,6 +26,8 @@
 |[328. 奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/) | [Go](go/leetcode/linkedlist/odd_even_list.go)<br> [Java](java/src/leetcode/linkedlist/OddEvenList.java)  | 中等| O(n)  | O(1)   |
 |[19. 删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | [Go](go/leetcode/linkedlist/remove_nth_from_end.go)<br> [Java](java/src/leetcode/linkedlist/RemoveNthFromEnd.java)  | 中等| O(n)  | O(1)   |
 |[25. K 个一组翻转链表](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | [Go](go/leetcode/linkedlist/reverse_k_group.go)<br> [Java](java/src/leetcode/linkedlist/ReverseKGroup.java)  | 困难| O(n)  | O(1)   |
+|[160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | [Go](go/leetcode/linkedlist/get_intersection_node.go)<br> [Java](java/src/leetcode/linkedlist/GetIntersectionNode.java)  | 简单| O(m+n)  | O(1)   |
+|[141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) | [Go](go/leetcode/linkedlist/has_cycle.go)<br> [Java](java/src/leetcode/linkedlist/HasCycle.java)  | 简单| O(n)  | O(1)   |
 
 ## 排序
 |题目|解法|难度|时间复杂度|空间复杂度|
@@ -43,7 +46,6 @@
 |[374. 猜数字大小](https://leetcode.cn/problems/guess-number-higher-or-lower/) | [Go](go/leetcode/binary_search/guess_number.go)<br> [Java](java/src/leetcode/binary_search/GuessNumber.java)  | 简单| O(logn)  | O(1)   |
 
 ## 动态规划
-
 |题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) | [Go](go/leetcode/dp/climb_stairs.go)<br> [Java](java/src/leetcode/dp/ClimbStairs.java)  | 简单| O(n)  | O(n)   | 

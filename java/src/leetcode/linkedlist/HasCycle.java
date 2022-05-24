@@ -23,6 +23,7 @@ public class HasCycle {
         if (head == null) return false;
         ListNode slow = head;
         //快指针要先走一步，避免一开始 slow == fast
+        //可以假想一个在 head 之前的虚拟节点，慢指针从虚拟节点移动一步到达 head，快指针从虚拟节点移动两步到达 head.next
         ListNode fast = head.next;
         while (fast != null && fast.next != null & slow != fast) {
             slow = slow.next;
