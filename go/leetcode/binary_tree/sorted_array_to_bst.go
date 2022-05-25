@@ -38,3 +38,9 @@ func helper(nums []int, left int, right int) *TreeNode {
 	root.Right = helper(nums, mid+1, right)
 	return root
 }
+
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
