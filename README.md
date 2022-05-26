@@ -32,12 +32,12 @@
 ## 栈
 |题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
-|[剑指 Offer 09. 用两个栈实现队列](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) | [Go](go/leetcode/stack/c_queue.go)<br> [Java](java/src/leetcode/stack/CQueue.java)  | 简单| appendTail 为O(1)，deleteHead 为均摊 O(1) | O(n)   |
+|[剑指 Offer 09. 用两个栈实现队列](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) | [Go](go/leetcode/stack/c_queue.go)<br> [Java](java/src/leetcode/stack/CQueue.java)  | 简单|  O(1) | O(n)   |
 
 ## 队列
 |题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
-|[225. 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/ | [Go](go/leetcode/queue/my_stack.go)<br> [Java](java/src/leetcode/queue/MyStack2.java)  | 简单| 均摊 O(1) | O(n)   |
+|[225. 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/) | [Go](go/leetcode/queue/my_stack.go)<br> [Java](java/src/leetcode/queue/MyStack2.java)  | 简单|  O(1) | O(n)   |
 
 
 ## 排序
@@ -51,7 +51,7 @@
 |[70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) | [Go](go/leetcode/recursion/climb_stairs.go)<br> [Java](java/src/leetcode/recursion/ClimbStairs.java)  | 简单| O(n)  | O(n)   | 
 
 ## 二分查找
-题目|解法|难度|时间复杂度|空间复杂度|
+|题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[704. 二分查找](https://leetcode.cn/problems/binary-search/) | [Go](go/leetcode/binary_search/search.go)<br> [Java](java/src/leetcode/binary_search/Search.java)  | 简单| O(logn)  | O(1)   | 
 |[374. 猜数字大小](https://leetcode.cn/problems/guess-number-higher-or-lower/) | [Go](go/leetcode/binary_search/guess_number.go)<br> [Java](java/src/leetcode/binary_search/GuessNumber.java)  | 简单| O(logn)  | O(1)   |
@@ -62,6 +62,7 @@
 |[108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [Go](go/leetcode/binary_tree/sorted_array_to_bst.go)<br> [Java](java/src/leetcode/binary_tree/sortedArrayToBST.java)  | 简单| O(n)  | O(logn)   | 
 
 ## 滑动窗口
+|题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) | [Go](go/leetcode/sliding_window/length_of_longest_substring.go)<br> [Java](java/src/leetcode/sliding_window/LengthOfLongestSubstring.java)  | 简单| O(n)  |O(∣Σ∣)，其中 Σ 表示字符集   |
 
