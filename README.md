@@ -13,6 +13,7 @@
 |---|---|---|---|---|
 |[盛最多水的容器](https://leetcode.cn/problems/container-with-most-water) | [Go](go/leetcode/two_pointers/max_area.go) | 中等| O(n)  | O(1)   | 
 |[面试题 01.05. 一次编辑](https://leetcode.cn/problems/one-away-lcci/submissions/) | [Go](go/leetcode/two_pointers/one_edit_a_way.go) | 简单| O(m+n)  | O(1)   | 
+|[9. 回文数](https://leetcode.cn/problems/palindrome-number/) | [Go](go/leetcode/two_pointers/is_palindrome.go)<br> [Java](java/src/leetcode/two_pointers/IsPalindromeNum.java) | 简单| O(logn)  | O(1)   | 
 
 ## 链表
 |题目|解法|难度|时间复杂度|空间复杂度|
@@ -33,6 +34,8 @@
 |题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[剑指 Offer 09. 用两个栈实现队列](https://leetcode.cn/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/) | [Go](go/leetcode/stack/c_queue.go)<br> [Java](java/src/leetcode/stack/CQueue.java)  | 简单|  O(1) | O(n)   |
+|[面试题 03.05. 栈排序](https://leetcode.cn/problems/sort-of-stacks-lcci/) | [Go](go/leetcode/stack/sorted_stack.go)<br> [Java](java/src/leetcode/stack/SortedStack.java)  | 中等 |  O(1) | O(n)   |
+|[155. 最小栈](https://leetcode.cn/problems/min-stack/) | [Go](go/leetcode/stack/min_stack.go)<br> [Java](java/src/leetcode/stack/MinStack.java)  | 简单|  O(1) | O(n)   |
 
 ## 队列
 |题目|解法|难度|时间复杂度|空间复杂度|

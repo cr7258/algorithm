@@ -28,15 +28,15 @@ public class IsPalindromeNum {
     }
 
     public static boolean solution2(int x) {
-        if (x < 0) return false;
-        int backupX = x;
-        //y为x反转后的数，有可能溢出
-        int y = 0;
-        while (x > 0) {
-            y = y * 10 + x % 10;
-            x = x / 10;
+        if (x < 0 || (x % 10 == 0 && x != 0)) {
+            return false;
         }
-        return backupX == y;
+        int reverseNum = 0;
+        while (reverseNum < x) {
+            reverseNum = reverseNum * 10 + x % 10;
+            x /= 10;
+        }
+        return reverseNum == x || reverseNum / 10 == x;
     }
 
     public static void main(String[] args) {
