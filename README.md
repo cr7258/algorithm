@@ -81,3 +81,8 @@
 |[45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/) | [Go](go/leetcode/greedy/jump.go)<br> [Java](java/src/leetcode/greedy/Jump.java)  | 简单| O(n)  | O(1)   | 
 |[121. 买卖股票的最佳时机](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock/) | [Go](go/leetcode/greedy/max_profit.go)<br> [Java](java/src/leetcode/greedy/MaxProfit.java)  | 简单| O(n)  | O(1)   |
 |[53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/) | [Go](go/leetcode/greedy/max_sub_array.go)<br> [Java](java/src/leetcode/greedy/MaxSubArray.java)  | 简单| O(n)  | O(1)   |
+
+## 纯编程题
+题目|解法|难度|时间复杂度|空间复杂度|
+|---|---|---|---|---|
+|[14. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [Go](go/leetcode/pure_program/longest_common_prefix.go)<br> [Java](java/src/leetcode/pure_program/LongestCommonPrefix.java)  | 简单| O(mn)  | O(1)   | 
