@@ -79,6 +79,7 @@ public class Calculate {
 
     //获取数字栈顶两个元素，计算，然后将结果压入数字栈
     public static void fetchAndCal(Stack<Integer> numStack, Stack<Character> opStack) {
+        // 注意顺序，numB 是先弹出来的，/ 符号计算顺序会有影响
         int numB = numStack.pop();
         int numA = numStack.pop();
         char ops = opStack.pop();
