@@ -51,6 +51,7 @@
 |题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[56. 合并区间](https://leetcode.cn/problems/merge-intervals/) | [Go](go/leetcode/sort/merge.go)<br> [Java](java/src/leetcode/sort/Merge.java)  | 简单| O(nlogn)  |O(logn)   |
+|[977. 有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/) | [Go](go/leetcode/sort/sorted_squares.go)<br> [Java](java/src/leetcode/sort/SortedSquares.java)  | 简单| O(n)  |O(1)   |
 
 ## 递归
 |题目|解法|难度|时间复杂度|空间复杂度|
