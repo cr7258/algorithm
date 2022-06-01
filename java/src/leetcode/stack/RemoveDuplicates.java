@@ -1,5 +1,7 @@
 package leetcode.stack;
 
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.Stack;
 
 /**
@@ -20,29 +22,25 @@ public class RemoveDuplicates {
 
     /**
      * 思路1：遇到相同的就弹出栈顶消除
+     *
      * @param s
      * @return
      */
     public static String solution1(String s) {
-        Stack<Character> stack = new Stack<>();
-        int n = s.length();
-        int i = 0;
-        while (i < n) {
+        Deque<Character> deque = new LinkedList<>();
+        for(int i=0; i < s.length(); i++){
             char c = s.charAt(i);
-            if (stack.isEmpty() || stack.peek() != c) {
-                stack.push(c);
-            } else {
-                while (!stack.isEmpty() && stack.peek() == c) {
-                    stack.pop();
-                }
+            if(deque.isEmpty() || deque.peekLast() != c){
+                deque.addLast(c);
+            }else{
+                deque.pollLast();
             }
-            i++;
         }
         StringBuilder sb = new StringBuilder();
-        while (!stack.isEmpty()) {
-            sb.append(stack.pop());
+        while(!deque.isEmpty()){
+            sb.append(deque.pollFirst());
         }
-        return sb.reverse().toString();
+        return sb.toString();
     }
 
     public static void main(String[] args) {

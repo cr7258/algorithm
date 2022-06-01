@@ -39,6 +39,7 @@
 |[155. 最小栈](https://leetcode.cn/problems/min-stack/) | [Go](go/leetcode/stack/min_stack.go)<br> [Java](java/src/leetcode/stack/MinStack.java)  | 简单|  O(1) | O(n)   |
 |[20. 有效的括号](https://leetcode.cn/problems/valid-parentheses/) | [Go](go/leetcode/stack/is_valid.go)<br> [Java](java/src/leetcode/stack/IsValid.java)  | 简单|  O(n) | O(1)   |
 |[面试题 16.26. 计算器](https://leetcode.cn/problems/calculator-lcci/) | [Go](go/leetcode/stack/calculate.go)<br> [Java](java/src/leetcode/stack/Calculate.java)  | 中等|  O(n) | O(n)   |
+|[1047. 删除字符串中的所有相邻重复项](https://leetcode.cn/problems/remove-all-adjacent-duplicates-in-string/) | [Go](go/leetcode/stack/remove_duplicates.go)<br> [Java](java/src/leetcode/stack/RemoveDuplicates.java)  | 简单|  O(n) | O(1)   |
 
 ## 队列
 |题目|解法|难度|时间复杂度|空间复杂度|
