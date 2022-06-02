@@ -1,6 +1,4 @@
-package leetcode.stack;
-
-import java.util.Stack;
+package stack
 
 /**
  * @description 739. 每日温度
@@ -34,31 +32,16 @@ import java.util.Stack;
 时间复杂度：O(n)，其中 n 是温度列表的长度。正向遍历温度列表一遍，对于温度列表中的每个下标，最多有一次进栈和出栈的操作。
 空间复杂度：O(n)，其中 n 是温度列表的长度。需要维护一个单调栈存储温度列表中的下标。
 */
-public class DailyTemperatures {
-
-    /**
-     * 思路1：当栈顶温度小于输入温度时，弹出栈顶温度，计算差值，最后压入输入温度
-     * @param temperatures
-     * @return
-     */
-    public static int[] solution1(int[] temperatures) {
-        Stack<Integer> stack = new Stack<>();
-        int n = temperatures.length;
-        int[] result = new int[n];
-        for (int i = 0; i < n; i++) {
-            while (!stack.empty() && temperatures[stack.peek()] < temperatures[i]) {
-                int idx = stack.pop();
-                result[idx] = i - idx;
-            }
-            stack.push(i);
-        }
-        return result;
-    }
-
-    public static void main(String[] args) {
-        int[] result = solution1(new int[]{30,40,50,60});
-        for(int i:result){
-            System.out.println(i);
-        }
-    }
+func dailyTemperatures(temperatures []int) []int {
+	stack := []int{}
+	result := make([]int, len(temperatures))
+	for i, v := range temperatures {
+		for len(stack) > 0 && v > temperatures[stack[len(stack)-1]] {
+			idx := stack[len(stack)-1]
+			result[idx] = i - idx
+			stack = stack[:len(stack)-1]
+		}
+		stack = append(stack, i)
+	}
+	return result
 }
