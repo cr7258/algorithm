@@ -7,6 +7,7 @@
 |[13. 罗马数字转整数](https://leetcode.cn/problems/roman-to-integer/) | [Go](go/leetcode/hashtable/roman_to_Int.go)<br> [Java](java/src/leetcode/hashtable/RomanToInt.java)  | 中等| O(n)  | O(1)   | 
 |[1. 两数之和](https://leetcode.cn/problems/two-sum/) | [Go](go/leetcode/hashtable/two_sum.go)<br> [Java](java/src/leetcode/hashtable/TwoSum.java)  | 中等| O(n)  | O(n)   |
 |[15. 三数之和](https://leetcode.cn/problems/3sum/) | [Go](go/leetcode/hashtable/three_num.go)<br> [Java](java/src/leetcode/hashtable/ThreeSum.java)  | 中等| O(n^2)  | O(n)   |
+|[217. 存在重复元素](https://leetcode.cn/problems/contains-duplicate/) | [Go](go/leetcode/hashtable/contains_duplicate.go)<br> [Java](java/src/leetcode/hashtable/ContainsDuplicate.java)  | 简单| O(n)  | O(n)   |
 
 ## 双指针
 题目|解法|难度|时间复杂度|空间复杂度|
@@ -64,6 +65,7 @@
 |---|---|---|---|---|
 |[704. 二分查找](https://leetcode.cn/problems/binary-search/) | [Go](go/leetcode/binary_search/search.go)<br> [Java](java/src/leetcode/binary_search/Search.java)  | 简单| O(logn)  | O(1)   | 
 |[374. 猜数字大小](https://leetcode.cn/problems/guess-number-higher-or-lower/) | [Go](go/leetcode/binary_search/guess_number.go)<br> [Java](java/src/leetcode/binary_search/GuessNumber.java)  | 简单| O(logn)  | O(1)   |
+|[278. 第一个错误的版本](https://leetcode.cn/problems/first-bad-version/) | [Go](go/leetcode/binary_tree/first_bad_version.go)<br> [Java](java/src/leetcode/binary_tree/FirstBadVersion.java)  | 简单| O(logn)  | O(1)   |
 
 ## 二叉树
 题目|解法|难度|时间复杂度|空间复杂度|
