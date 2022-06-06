@@ -16,6 +16,7 @@
 |[面试题 01.05. 一次编辑](https://leetcode.cn/problems/one-away-lcci/submissions/) | [Go](go/leetcode/two_pointers/one_edit_a_way.go) | 简单| O(m+n)  | O(1)   | 
 |[9. 回文数](https://leetcode.cn/problems/palindrome-number/) | [Go](go/leetcode/two_pointers/is_palindrome.go)<br> [Java](java/src/leetcode/two_pointers/IsPalindromeNum.java) | 简单| O(logn)  | O(1)   | 
 |[27. 移除元素](https://leetcode.cn/problems/remove-element/) | [Go](go/leetcode/two_pointers/remove_element.go)<br> [Java](java/src/leetcode/two_pointers/RemoveElement.java) | 简单| O(n)  | O(1)   |
+|[344. 反转字符串](https://leetcode.cn/problems/reverse-string/) | [Go](go/leetcode/two_pointers/reverse_string.go)<br> [Java](java/src/leetcode/two_pointers/ReverseString.java) | 简单| O(n)  | O(1)   |
 
 ## 链表
 |题目|解法|难度|时间复杂度|空间复杂度|
@@ -59,6 +60,10 @@
 |题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) | [Go](go/leetcode/recursion/climb_stairs.go)<br> [Java](java/src/leetcode/recursion/ClimbStairs.java)  | 简单| O(n)  | O(n)   | 
+|[剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode.cn/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) | [Go](go/leetcode/recursion/num_ways.go)<br> [Java](java/src/leetcode/recursion/NumWays.java)  | 简单| O(n)  | O(n)   |
+|[剑指 Offer 10- I. 斐波那契数列](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/) | [Go](go/leetcode/recursion/fib.go)<br> [Java](java/src/leetcode/recursion/Fib.java)  | 简单| O(n)  | O(n)   |
+|[剑指 Offer 06. 从尾到头打印链表](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) | [Go](go/leetcode/recursion/reverse_print.go)<br> [Java](java/src/leetcode/recursion/ReversePrint.java)  | 简单| O(n)  | O(n)   |
+|[面试题 08.01. 三步问题](https://leetcode.cn/problems/three-steps-problem-lcci/) | [Go](go/leetcode/recursion/ways_to_step.go)<br> [Java](java/src/leetcode/recursion/WaysToStep.java)  | 简单| O(n)  | O(n)   |
 
 ## 二分查找
 |题目|解法|难度|时间复杂度|空间复杂度|
@@ -94,4 +99,11 @@
 ## 纯编程题
 题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
-|[14. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [Go](go/leetcode/pure_program/longest_common_prefix.go)<br> [Java](java/src/leetcode/pure_program/LongestCommonPrefix.java)  | 简单| O(mn)  | O(1)   | 
+|[14. 最长公共前缀](https://leetcode.cn/problems/longest-common-prefix/) | [Go](go/leetcode/pure_program/longest_common_prefix.go)<br> [Java](java/src/leetcode/pure_program/LongestCommonPrefix.java)  | 简单| O(mn)  | O(1)   |
+
+## 数学
+题目|解法|难度|时间复杂度|空间复杂度|
+|---|---|---|---|---|
+|[7. 整数反转](https://leetcode.cn/problems/reverse-integer/) | [Go](go/leetcode/math/reverse.go)<br> [Java](java/src/leetcode/math/Reverse.java)  | 简单| O(log∣x∣)，翻转的次数即 x 十进制的位数| O(1)   |
+
+

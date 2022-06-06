@@ -1,5 +1,8 @@
 package leetcode.recursion;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @description 剑指 Offer 10- II. 青蛙跳台阶问题
  * @author chengzw
@@ -37,22 +40,16 @@ package leetcode.recursion;
  空间复杂度：O(n)
  */
 
-
-public class NumWays {
+public class NumWays2 {
     //备忘录
-    public static int[] mem;
-
+    private Map<Integer, Integer> map = new HashMap<>();
     public int numWays(int n) {
-        mem = new int[n + 1];
-        return numWays_r(n);
-    }
-
-    public static int numWays_r(int n) {
         if (n == 0) return 1;
         if (n == 1) return 1;
         if (n == 2) return 2;
-        if (mem[n] != 0) return mem[n];
-        mem[n] = (numWays_r(n - 1) + numWays_r(n - 2)) % 1000000007;
-        return mem[n];
+        if (map.containsKey(n)) return map.get(n);
+        int result = (numWays(n - 1) + numWays(n - 2)) % 1000000007;
+        map.put(n, result);
+        return result;
     }
 }
