@@ -17,6 +17,7 @@
 |[9. 回文数](https://leetcode.cn/problems/palindrome-number/) | [Go](go/leetcode/two_pointers/is_palindrome.go)<br> [Java](java/src/leetcode/two_pointers/IsPalindromeNum.java) | 简单| O(logn)  | O(1)   | 
 |[27. 移除元素](https://leetcode.cn/problems/remove-element/) | [Go](go/leetcode/two_pointers/remove_element.go)<br> [Java](java/src/leetcode/two_pointers/RemoveElement.java) | 简单| O(n)  | O(1)   |
 |[344. 反转字符串](https://leetcode.cn/problems/reverse-string/) | [Go](go/leetcode/two_pointers/reverse_string.go)<br> [Java](java/src/leetcode/two_pointers/ReverseString.java) | 简单| O(n)  | O(1)   |
+|[557. 反转字符串中的单词 III](https://leetcode.cn/problems/reverse-words-in-a-string-iii/) | [Go](go/leetcode/two_pointers/reverse_word.go)<br> [Java](java/src/leetcode/two_pointers/ReverseWords.java) | 简单| O(n)  | O(n)   |
 
 ## 链表
 |题目|解法|难度|时间复杂度|空间复杂度|
@@ -64,6 +65,7 @@
 |[剑指 Offer 10- I. 斐波那契数列](https://leetcode.cn/problems/fei-bo-na-qi-shu-lie-lcof/) | [Go](go/leetcode/recursion/fib.go)<br> [Java](java/src/leetcode/recursion/Fib.java)  | 简单| O(n)  | O(n)   |
 |[剑指 Offer 06. 从尾到头打印链表](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) | [Go](go/leetcode/recursion/reverse_print.go)<br> [Java](java/src/leetcode/recursion/ReversePrint.java)  | 简单| O(n)  | O(n)   |
 |[面试题 08.01. 三步问题](https://leetcode.cn/problems/three-steps-problem-lcci/) | [Go](go/leetcode/recursion/ways_to_step.go)<br> [Java](java/src/leetcode/recursion/WaysToStep.java)  | 简单| O(n)  | O(n)   |
+|[剑指 Offer 24. 反转链表](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/) | [Go](go/leetcode/recursion/reverse_list.go)<br> [Java](java/src/leetcode/recursion/ReverseList.java)  | 简单| O(n)  | O(n)   |
 
 ## 二分查找
 |题目|解法|难度|时间复杂度|空间复杂度|
