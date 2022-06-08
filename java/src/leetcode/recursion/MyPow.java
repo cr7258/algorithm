@@ -13,8 +13,8 @@ package leetcode.recursion;
 
 /**
  * 思路：数学公式
- * 当 n 为偶数时， x^n = x(n/2) * x(n/2)
- * 当 n 为奇数时， x^n = x(n/2) * x(n/2) * x
+ * 当 n 为偶数时， x^n = x^(n/2) * x^(n/2)
+ * 当 n 为奇数时， x^n = x^(n/2) * x^(n/2) * x
  *
  * 时间复杂度：O(logn)
  * 空间复杂度：O(logn)

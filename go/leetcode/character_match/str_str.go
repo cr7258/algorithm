@@ -26,6 +26,9 @@ import "fmt"
 输出：-1
 */
 
+/**
+思路：KMP 算法
+*/
 func strStr(haystack string, needle string) int {
 	// 主串长度
 	n := len(haystack)

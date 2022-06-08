@@ -1,4 +1,4 @@
-package leetcode.recursion;
+package main
 
 /**
  * @description 剑指 Offer 25. 合并两个排序的链表
@@ -22,17 +22,18 @@ package leetcode.recursion;
 时间复杂度：O(n+m)，其中 n 和 m 分别为两个链表的长度。
 空间复杂度：O(n+m)，其中 n 和 m 分别为两个链表的长度。
 */
-public class MergeTwoLists {
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-            if(l1 == null) return l2;
-            if(l2 == null) return l1;
-
-            if(l1.val < l2.val) {
-                l1.next = mergeTwoLists(l1.next, l2);
-                return l1;
-            }else {
-                l2.next = mergeTwoLists(l1,l2.next);
-                return l2;
-            }
-        }
+func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
+    if l1 == nil {
+        return l2
+    }
+    if l2 == nil {
+        return l1
+    }
+    if l1.Val < l2.Val {
+        l1.Next = mergeTwoLists(l1.Next, l2)
+        return l1
+    }else {
+        l2.Next = mergeTwoLists(l1, l2.Next)
+        return l2
+    }
 }

@@ -66,6 +66,8 @@
 |[剑指 Offer 06. 从尾到头打印链表](https://leetcode.cn/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) | [Go](go/leetcode/recursion/reverse_print.go)<br> [Java](java/src/leetcode/recursion/ReversePrint.java)  | 简单| O(n)  | O(n)   |
 |[面试题 08.01. 三步问题](https://leetcode.cn/problems/three-steps-problem-lcci/) | [Go](go/leetcode/recursion/ways_to_step.go)<br> [Java](java/src/leetcode/recursion/WaysToStep.java)  | 简单| O(n)  | O(n)   |
 |[剑指 Offer 24. 反转链表](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/) | [Go](go/leetcode/recursion/reverse_list.go)<br> [Java](java/src/leetcode/recursion/ReverseList.java)  | 简单| O(n)  | O(n)   |
+|[剑指 Offer 25. 合并两个排序的链表](https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/) | [Go](go/leetcode/recursion/merge_two_lists.go)<br> [Java](java/src/leetcode/recursion/MergeTwoLists.java)  | 简单| O(m+n)  | O(m+n)   |
+|[剑指 Offer 16. 数值的整数次方](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/) | [Go](go/leetcode/recursion/my_pow.go)<br> [Java](java/src/leetcode/recursion/MyPow.java)  | 简单| O(logn)  | O(logn)   |
 
 ## 二分查找
 |题目|解法|难度|时间复杂度|空间复杂度|
@@ -84,6 +86,7 @@
 |---|---|---|---|---|
 |[3. 无重复字符的最长子串](https://leetcode.cn/problems/longest-substring-without-repeating-characters/) | [Go](go/leetcode/sliding_window/length_of_longest_substring.go)<br> [Java](java/src/leetcode/sliding_window/LengthOfLongestSubstring.java)  | 简单| O(n)  |O(∣Σ∣)，其中 Σ 表示字符集   |
 |[209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/) | [Go](go/leetcode/sliding_window/min_sub_array_len.go)<br> [Java](java/src/leetcode/sliding_window/MinSubArrayLen.java)  | 中等| O(n)  |O(1)|
+|[567. 字符串的排列](https://leetcode.cn/problems/permutation-in-string/) | [Go](go/leetcode/sliding_window/check_inclusion.go)<br> [Java](java/src/leetcode/sliding_window/CheckInclusion.java)  | 中等| O(n)  |O(1)|
 
 
 ## 动态规划
@@ -107,5 +110,10 @@
 题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[7. 整数反转](https://leetcode.cn/problems/reverse-integer/) | [Go](go/leetcode/math/reverse.go)<br> [Java](java/src/leetcode/math/Reverse.java)  | 简单| O(log∣x∣)，翻转的次数即 x 十进制的位数| O(1)   |
+|[118. 杨辉三角](https://leetcode.cn/problems/pascals-triangle/) | [Go](go/leetcode/math/generate.go)<br> [Java](java/src/leetcode/math/Generate.java)  | 简单| O(n^2) | O(1)   |
 
+## 字符串匹配
+题目|解法|难度|时间复杂度|空间复杂度|
+|---|---|---|---|---|
+|[28. 实现 strStr()](https://leetcode.cn/problems/implement-strstr/) | [Go](go/leetcode/character_match/str_str.go)<br> [Java](java/src/leetcode/character_match/StrStr.java)  | 简单| |  |
 
