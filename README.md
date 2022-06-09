@@ -68,6 +68,12 @@
 |[剑指 Offer 24. 反转链表](https://leetcode.cn/problems/fan-zhuan-lian-biao-lcof/) | [Go](go/leetcode/recursion/reverse_list.go)<br> [Java](java/src/leetcode/recursion/ReverseList.java)  | 简单| O(n)  | O(n)   |
 |[剑指 Offer 25. 合并两个排序的链表](https://leetcode.cn/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/) | [Go](go/leetcode/recursion/merge_two_lists.go)<br> [Java](java/src/leetcode/recursion/MergeTwoLists.java)  | 简单| O(m+n)  | O(m+n)   |
 |[剑指 Offer 16. 数值的整数次方](https://leetcode.cn/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/) | [Go](go/leetcode/recursion/my_pow.go)<br> [Java](java/src/leetcode/recursion/MyPow.java)  | 简单| O(logn)  | O(logn)   |
+|[面试题 08.05. 递归乘法](https://leetcode.cn/problems/recursive-mulitply-lcci/) | [Go](go/leetcode/recursion/multiply.go)<br> [Java](java/src/leetcode/recursion/Multiply.java)  | 中等| O(logn)  | O(logn)   |
+
+## DFS
+|题目|解法|难度|时间复杂度|空间复杂度|
+|---|---|---|---|---|
+|[733. 图像渲染](https://leetcode.cn/problems/flood-fill/) | [Go](go/leetcode/dfs/flood_fill.go)<br> [Java](java/src/leetcode/dfs/FloodFill.java)  | 简单|   |   |
 
 ## 二分查找
 |题目|解法|难度|时间复杂度|空间复杂度|
@@ -80,6 +86,8 @@
 题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
 |[108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [Go](go/leetcode/binary_tree/sorted_array_to_bst.go)<br> [Java](java/src/leetcode/binary_tree/sortedArrayToBST.java)  | 简单| O(n)  | O(logn)   | 
+|[144. 二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | [Go](go/leetcode/binary_tree/preorder_traversal.go)<br> [Java](java/src/leetcode/binary_tree/PreorderTraversal.java)  | 简单| O(n)  | O(n)   |
+|[589. N 叉树的前序遍历](https://leetcode.cn/problems/n-ary-tree-preorder-traversal/) | [Go](go/leetcode/binary_tree/preorder.go)<br> [Java](java/src/leetcode/binary_tree/Preorder.java)  | 简单| O(n)  | O(n)   |
 
 ## 滑动窗口
 |题目|解法|难度|时间复杂度|空间复杂度|
