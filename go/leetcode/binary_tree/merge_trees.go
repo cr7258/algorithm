@@ -1,4 +1,4 @@
-package leetcode.binary_tree;
+package binary_tree
 
 /**
  * @author chengzw
@@ -32,19 +32,19 @@ package leetcode.binary_tree;
 
 空间复杂度：O(min(m,n))，其中 m 和 n 分别是两个二叉树的节点个数。
 空间复杂度取决于递归调用的层数，递归调用的层数不会超过较小的二叉树的最大高度，最坏情况下，二叉树的高度等于节点数。
- */
-public class MergeTrees {
-    public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
-        //当其中一颗数为 null 时，返回另一颗子树，把这颗子树拼接到上层中
-        if (root1 == null) return root2;
-        if (root2 == null) return root1;
+*/
 
-        //新数来连接，类似链表中的虚拟头结点
-        TreeNode newNode = new TreeNode(root1.val + root2.val);
-        TreeNode leftNode = mergeTrees(root1.left, root2.left);
-        TreeNode rightNode = mergeTrees(root1.right, root2.right);
-        newNode.left = leftNode;
-        newNode.right = rightNode;
-        return newNode;
-    }
+func mergeTrees(root1 *TreeNode, root2 *TreeNode) *TreeNode {
+	if root1 == nil {
+		return root2
+	}
+	if root2 == nil {
+		return root1
+	}
+
+	// 类似链表的虚拟头节点
+	newNode := &TreeNode{Val: root1.Val + root2.Val}
+	newNode.Left = mergeTrees(root1.Left, root2.Left)
+	newNode.Right = mergeTrees(root1.Right, root2.Right)
+	return newNode
 }

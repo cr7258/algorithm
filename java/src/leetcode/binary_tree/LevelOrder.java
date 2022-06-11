@@ -24,8 +24,11 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * 思路：二叉树的层序遍历使用队列
- * 把元素加入队列，出队的时候，记录节点的值，然后把该节点的子节点入队
+ 思路：二叉树的层序遍历使用队列
+ 把元素加入队列，出队的时候，记录节点的值，然后把该节点的子节点入队
+
+ 时间复杂度 O(n) ： n 为二叉树的节点数量，即 BFS 需循环 n 次。
+ 空间复杂度 O(n) ： 最差情况下，即当树为平衡二叉树时，最多有 n/2 个树节点同时在 queue 中，使用 O(n) 大小的额外空间。
  */
 public class LevelOrder {
     public int[] levelOrder(TreeNode root) {
