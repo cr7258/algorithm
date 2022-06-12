@@ -83,15 +83,18 @@
 |[278. 第一个错误的版本](https://leetcode.cn/problems/first-bad-version/) | [Go](go/leetcode/binary_tree/first_bad_version.go)<br> [Java](java/src/leetcode/binary_tree/FirstBadVersion.java)  | 简单| O(logn)  | O(1)   |
 
 ## 二叉树
-题目|解法|难度|时间复杂度|空间复杂度|
-|---|---|---|---|---|
-|[108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [Go](go/leetcode/binary_tree/sorted_array_to_bst.go)<br> [Java](java/src/leetcode/binary_tree/sortedArrayToBST.java)  | 简单| O(n)  | O(logn)   | 
-|[144. 二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | [Go](go/leetcode/binary_tree/preorder_traversal.go)<br> [Java](java/src/leetcode/binary_tree/PreorderTraversal.java)  | 简单| O(n)  | O(n)   |
-|[589. N 叉树的前序遍历](https://leetcode.cn/problems/n-ary-tree-preorder-traversal/) | [Go](go/leetcode/binary_tree/preorder.go)<br> [Java](java/src/leetcode/binary_tree/Preorder.java)  | 简单| O(n)  | O(n)   |
-|[617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/) | [Go](go/leetcode/binary_tree/merge_trees.go)<br> [Java](java/src/leetcode/binary_tree/MergeTrees.java)  | 简单| O(n)  | O(n)   |
-|[剑指 Offer 32 - I. 从上到下打印二叉树](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/) | [Go](go/leetcode/binary_tree/level_order.go)<br> [Java](java/src/leetcode/binary_tree/LevelOrder.java)  | 中等| O(n)  | O(n)   |
-|[102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | [Go](go/leetcode/binary_tree/level_order_2.go)<br> [Java](java/src/leetcode/binary_tree/LevelOrder2.java)  | 中等| O(n)  | O(n)   |
-|[剑指 Offer 32 - III. 从上到下打印二叉树 III](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) | [Go](go/leetcode/binary_tree/level_order_3.go)<br> [Java](java/src/leetcode/binary_tree/levelOrder3.java)  | 中等| O(n)  | O(n)   |
+题目|解法|难度|时间复杂度|空间复杂度|题型|
+|---|---|---|---|---|---|
+|[144. 二叉树的前序遍历](https://leetcode.cn/problems/binary-tree-preorder-traversal/) | [Go](go/leetcode/binary_tree/preorder_traversal.go)<br> [Java](java/src/leetcode/binary_tree/PreorderTraversal.java)  | 简单| O(n)  | O(n)   | 二叉树前中后序遍历 |
+|[94. 二叉树的中序遍历](https://leetcode.cn/problems/binary-tree-inorder-traversal/) | [Go](go/leetcode/binary_tree/inorder_traversal.go)<br> [Java](java/src/leetcode/binary_tree/InorderTraversal.java)  | 简单| O(n)  | O(n)   | 二叉树前中后序遍历 |
+|[589. N 叉树的前序遍历](https://leetcode.cn/problems/n-ary-tree-preorder-traversal/) | [Go](go/leetcode/binary_tree/preorder.go)<br> [Java](java/src/leetcode/binary_tree/Preorder.java)  | 简单| O(n)  | O(n)   |二叉树前中后序遍历|
+|[剑指 Offer 32 - I. 从上到下打印二叉树](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/) | [Go](go/leetcode/binary_tree/level_order.go)<br> [Java](java/src/leetcode/binary_tree/LevelOrder.java)  | 中等| O(n)  | O(n)   |二叉树按层遍历|
+|[102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | [Go](go/leetcode/binary_tree/level_order_2.go)<br> [Java](java/src/leetcode/binary_tree/LevelOrder2.java)  | 中等| O(n)  | O(n)   |二叉树按层遍历|
+|[剑指 Offer 32 - III. 从上到下打印二叉树 III](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) | [Go](go/leetcode/binary_tree/level_order_3.go)<br> [Java](java/src/leetcode/binary_tree/levelOrder3.java)  | 中等| O(n)  | O(n)   |二叉树按层遍历|
+|[429. N 叉树的层序遍历](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/) | [Go](go/leetcode/binary_tree/level_order_4.go)<br> [Java](java/src/leetcode/binary_tree/levelOrder4.java)  | 中等| O(n)  | O(n)   |二叉树按层遍历|
+|[617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/) | [Go](go/leetcode/binary_tree/merge_trees.go)<br> [Java](java/src/leetcode/binary_tree/MergeTrees.java)  | 简单| O(n)  | O(n)   | 二叉树上的递归|
+|[108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [Go](go/leetcode/binary_tree/sorted_array_to_bst.go)<br> [Java](java/src/leetcode/binary_tree/sortedArrayToBST.java)  | 简单| O(n)  | O(logn)   | |
+
 
 ## 滑动窗口
 |题目|解法|难度|时间复杂度|空间复杂度|
