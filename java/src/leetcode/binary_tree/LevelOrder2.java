@@ -37,7 +37,7 @@ import java.util.Queue;
 空间复杂度：队列中元素的个数不超过 n 个，故渐进空间复杂度为 O(n)。
 */
 
-public class LevelOrderMedium {
+public class LevelOrder2 {
     public List<List<Integer>> levelOrder(TreeNode root) {
         // 存放最终结果
         List<List<Integer>> ans = new ArrayList<List<Integer>>();

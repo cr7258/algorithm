@@ -92,8 +92,13 @@
 |[102. 二叉树的层序遍历](https://leetcode.cn/problems/binary-tree-level-order-traversal/) | [Go](go/leetcode/binary_tree/level_order_2.go)<br> [Java](java/src/leetcode/binary_tree/LevelOrder2.java)  | 中等| O(n)  | O(n)   |二叉树按层遍历|
 |[剑指 Offer 32 - III. 从上到下打印二叉树 III](https://leetcode.cn/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof/) | [Go](go/leetcode/binary_tree/level_order_3.go)<br> [Java](java/src/leetcode/binary_tree/levelOrder3.java)  | 中等| O(n)  | O(n)   |二叉树按层遍历|
 |[429. N 叉树的层序遍历](https://leetcode.cn/problems/n-ary-tree-level-order-traversal/) | [Go](go/leetcode/binary_tree/level_order_4.go)<br> [Java](java/src/leetcode/binary_tree/levelOrder4.java)  | 中等| O(n)  | O(n)   |二叉树按层遍历|
+|[513. 找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/) | [Go](go/leetcode/binary_tree/find_bottom_left_value.go)<br> [Java](java/src/leetcode/binary_tree/FindBottomLeftValue.java  | 中等| O(n)  | O(n)   |二叉树按层遍历|
 |[617. 合并二叉树](https://leetcode.cn/problems/merge-two-binary-trees/) | [Go](go/leetcode/binary_tree/merge_trees.go)<br> [Java](java/src/leetcode/binary_tree/MergeTrees.java)  | 简单| O(n)  | O(n)   | 二叉树上的递归|
-|[108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [Go](go/leetcode/binary_tree/sorted_array_to_bst.go)<br> [Java](java/src/leetcode/binary_tree/sortedArrayToBST.java)  | 简单| O(n)  | O(logn)   | |
+|[700. 二叉搜索树中的搜索](https://leetcode.cn/problems/search-in-a-binary-search-tree/) | [Go](go/leetcode/binary_tree/search_bst.go)<br> [Java](java/src/leetcode/binary_tree/SearchBST.java)  | 简单| O(n)  | O(n)   | 二叉树上的递归|
+|[938. 二叉搜索树的范围和](https://leetcode.cn/problems/range-sum-of-bst/) | [Go](go/leetcode/binary_tree/range_sum_bst.go)<br> [Java](java/src/leetcode/binary_tree/RangeSumBST.java)  | 简单| O(n)  | O(n)   | 二叉树上的递归 |
+|[236. 二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | [Go](go/leetcode/binary_tree/lowest_common_ancestor.go)<br> [Java](java/src/leetcode/binary_tree/lowestCommonAncestor.java)  | 中等| O(n)  | O(n)   | 最近公共祖先 |
+|[235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Go](go/leetcode/binary_tree/lowest_common_ancestor_2.go)<br> [Java](java/src/leetcode/binary_tree/LowestCommonAncestor2.java)  | 中等| O(n)  | O(n)   | 最近公共祖先 |
+|[108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [Go](go/leetcode/binary_tree/sorted_array_to_bst.go)<br> [Java](java/src/leetcode/binary_tree/sortedArrayToBST.java)  | 简单| O(n)  | O(logn)   |按照遍历结果反向构建二叉树 |
 
 
 ## 滑动窗口

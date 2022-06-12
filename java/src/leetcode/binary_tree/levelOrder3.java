@@ -23,7 +23,7 @@ import java.util.*;
  * ]
  * @since 2021/9/27
  */
-public class levelOrderHard {
+public class levelOrder3 {
 
     /**
      * 思路1：使用两个栈
