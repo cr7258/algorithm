@@ -9,7 +9,7 @@ package leetcode.binary_tree;
 /**
  * 和求二叉树的最大深度类似，化简问题求子树的最大深度 + 1
  */
-public class NmaxDepth {
+public class NmaxDepth2 {
     public int maxDepth(Node root) {
         if (root == null) return 0;
         int childrenMaxDepth = 0;
