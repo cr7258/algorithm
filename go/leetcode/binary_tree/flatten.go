@@ -33,6 +33,8 @@ package binary_tree
 时间复杂度：O(n)
 空间复杂度：O(n)
 */
+
+// 虚拟头节点
 var newNode *TreeNode
 var tail *TreeNode
 

@@ -1,4 +1,4 @@
-package leetcode.binary_tree;
+package binary_tree
 
 /**
  * @description 面试题 04.06. 后继者
@@ -41,28 +41,38 @@ package leetcode.binary_tree;
 空间复杂度：O(n)，其中 n 是二叉搜索树的节点数。空间复杂度取决于栈深度，平均情况是O(logn)，最坏情况是 O(n)。
 */
 
-public class InorderSuccessor {
-    TreeNode successor;
-    //判断下一个是节点是否是中序后继
-    boolean coming = false;
+// 判断下一个节点是否是后继
+var coming bool
 
-    public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
-        inorder(root, p);
-        return successor;
-    }
+// 后继节点
+var successor *TreeNode
 
-    public void inorder(TreeNode root, TreeNode p) {
-        if (root == null) return;
-        inorder(root.left, p);
-        //提前退出条件
-        if (successor != null) return;
-        //如果下一个节点是中序后继
-        if (coming == true) {
-            successor = root;
-        }
-        if (root == p) {
-            coming = true;
-        }
-        inorder(root.right, p);
-    }
+func inorderSuccessor(root *TreeNode, p *TreeNode) *TreeNode {
+	// 初始化全局变量
+	coming = false
+	successor = nil
+
+	inorder(root, p)
+	return successor
+}
+
+func inorder(root *TreeNode, p *TreeNode) {
+	if root == nil {
+		return
+	}
+	inorder(root.Left, p)
+	// 已经找到后继，提前结束
+	if successor != nil {
+		return
+	}
+	// 该节点是后继，上一个节点是 p
+	if coming {
+		successor = root
+	}
+
+	if root == p {
+		coming = true
+	}
+
+	inorder(root.Right, p)
 }
