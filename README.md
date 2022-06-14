@@ -107,6 +107,8 @@
 |[236. 二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | [Go](go/leetcode/binary_tree/lowest_common_ancestor.go)<br> [Java](java/src/leetcode/binary_tree/lowestCommonAncestor.java)  | 中等| O(n)  | O(n)   | 最近公共祖先 |
 |[235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Go](go/leetcode/binary_tree/lowest_common_ancestor_2.go)<br> [Java](java/src/leetcode/binary_tree/LowestCommonAncestor2.java)  | 中等| O(n)  | O(n)   | 最近公共祖先 |
 |[108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [Go](go/leetcode/binary_tree/sorted_array_to_bst.go)<br> [Java](java/src/leetcode/binary_tree/sortedArrayToBST.java)  | 简单| O(n)  | O(logn)   |按照遍历结果反向构建二叉树 |
+|[114. 二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) | [Go](go/leetcode/binary_tree/flatten.go)<br> [Java](java/src/leetcode/binary_tree/Flatten.java)  | 简单| O(n)  | O(n)   | 二叉树转链表 |
+|[543. 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/) | [Go](go/leetcode/binary_tree/diameter_of_binary_tree.go)<br> [Java](java/src/leetcode/binary_tree/DiameterOfBinaryTree.java)  | 简单| O(n)  | O(n)   | 二叉树上的最长路径和 |
 
 
 ## 滑动窗口
