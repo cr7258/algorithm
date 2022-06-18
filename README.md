@@ -75,6 +75,12 @@
 |---|---|---|---|---|
 |[733. 图像渲染](https://leetcode.cn/problems/flood-fill/) | [Go](go/leetcode/dfs/flood_fill.go)<br> [Java](java/src/leetcode/dfs/FloodFill.java)  | 简单|   |   |
 
+## 回溯
+|题目|解法|难度|时间复杂度|空间复杂度|
+|---|---|---|---|---|
+|[77. 组合](https://leetcode.cn/problems/combinations/) | [Go](go/leetcode/backtrack/combine.go)<br> [Java](java/src/leetcode/backtrack/Combine.java)  | 中等|   |   |
+
+
 ## 二分查找
 |题目|解法|难度|时间复杂度|空间复杂度|
 |---|---|---|---|---|
@@ -107,10 +113,17 @@
 |[面试题 04.06. 后继者](https://leetcode.cn/problems/successor-lcci/) | [Go](go/leetcode/binary_tree/inorder_successor.go)<br> [Java](java/src/leetcode/binary_tree/InorderSuccessor.java)  | 简单| O(n)| O(n) | 二叉搜索树 |
 |[236. 二叉树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/) | [Go](go/leetcode/binary_tree/lowest_common_ancestor.go)<br> [Java](java/src/leetcode/binary_tree/lowestCommonAncestor.java)  | 中等| O(n)  | O(n)   | 最近公共祖先 |
 |[235. 二叉搜索树的最近公共祖先](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-search-tree/) | [Go](go/leetcode/binary_tree/lowest_common_ancestor_2.go)<br> [Java](java/src/leetcode/binary_tree/LowestCommonAncestor2.java)  | 中等| O(n)  | O(n)   | 最近公共祖先 |
-|[108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [Go](go/leetcode/binary_tree/sorted_array_to_bst.go)<br> [Java](java/src/leetcode/binary_tree/sortedArrayToBST.java)  | 简单| O(n)  | O(logn)   |按照遍历结果反向构建二叉树 |
 |[114. 二叉树展开为链表](https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/) | [Go](go/leetcode/binary_tree/flatten.go)<br> [Java](java/src/leetcode/binary_tree/Flatten.java)  | 简单| O(n)  | O(n)   | 二叉树转链表 |
 |[面试题 17.12. BiNode](https://leetcode.cn/problems/binode-lcci/) | [Go](go/leetcode/binary_tree/convert_bi_node.go)<br> [Java](java/src/leetcode/binary_tree/ConvertBiNode.java)  | 简单| O(n)  | O(n)   | 二叉树转链表 |
+|[面试题 04.03. 特定深度节点链表](https://leetcode.cn/problems/list-of-depth-lcci/) | [Go](go/leetcode/binary_tree/list_of_depth.go)<br> [Java](java/src/leetcode/binary_tree/ListOfDepth.java)  | 中等| O(n)  | O(n)   | 二叉树转链表 |
+|[剑指 Offer 36. 二叉搜索树与双向链表](https://leetcode.cn/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/) | [Go](go/leetcode/binary_tree/tree_to_doubly_list.go)<br> [Java](java/src/leetcode/binary_tree/TreeToDoublyList.java)  | 中等| O(n)  | O(n)   | 二叉树转链表 |
+|[108. 将有序数组转换为二叉搜索树](https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/) | [Go](go/leetcode/binary_tree/sorted_array_to_bst.go)<br> [Java](java/src/leetcode/binary_tree/sortedArrayToBST.java)  | 简单| O(n)  | O(logn)   |按照遍历结果反向构建二叉树 |
+|[105. 从前序与中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/) | [Go](go/leetcode/binary_tree/build_tree.go)<br> [Java](java/src/leetcode/binary_tree/BuildTree.java)  | 中等| O(n)  | O(n)   |按照遍历结果反向构建二叉树 |
+|[106. 从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) | [Go](go/leetcode/binary_tree/build_tree2.go)<br> [Java](java/src/leetcode/binary_tree/BuildTree2.java)  | 中等| O(n)  | O(n)   |按照遍历结果反向构建二叉树 |
+|[889. 根据前序和后序遍历构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-postorder-traversal/) | [Go](go/leetcode/binary_tree/build_tree3.go)<br> [Java](java/src/leetcode/binary_tree/BuildTree3.java)  | 中等| O(n)  | O(n)   |按照遍历结果反向构建二叉树 |
+|[剑指 Offer 33. 二叉搜索树的后序遍历序列](https://leetcode.cn/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) | [Go](go/leetcode/binary_tree/verify_post_order.go)<br> [Java](java/src/leetcode/binary_tree/VerifyPostorder.java)  | 中等| O(n^2)  | O(n)   |按照遍历结果反向构建二叉树 |
 |[543. 二叉树的直径](https://leetcode.cn/problems/diameter-of-binary-tree/) | [Go](go/leetcode/binary_tree/diameter_of_binary_tree.go)<br> [Java](java/src/leetcode/binary_tree/DiameterOfBinaryTree.java)  | 简单| O(n)  | O(n)   | 二叉树上的最长路径和 |
+|[剑指 Offer 34. 二叉树中和为某一值的路径](https://leetcode.cn/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) | [Go](go/leetcode/binary_tree/diameter_of_binary_tree.go)<br> [Java](java/src/leetcode/binary_tree/PathSum.java)  | 中等| O(n^2)  | O(n)   | 二叉树上的最长路径和 |
 
 
 ## 滑动窗口

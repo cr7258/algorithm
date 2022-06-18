@@ -4,24 +4,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * @description 77. 组合
  * @author chengzw
- * @description 组合，https://leetcode-cn.com/problems/combinations/
- * <p>
- * 给定两个整数 n 和 k，返回范围 [1, n] 中所有可能的 k 个数的组合。
- * 你可以按任何顺序返回答案。
- * <p>
- * 输入：n = 4, k = 2
- * 输出：
- * [
- * [2,4],
- * [3,4],
- * [2,3],
- * [1,2],
- * [1,3],
- * [1,4],
- * ]
- * @since 2021/10/7
+ * @since 2022/6/16
+ * @link https://leetcode.cn/problems/combinations/
  */
+
+/**
+给定两个整数 n 和 k，返回范围 [1, n] 中所有可能的 k 个数的组合。
+你可以按 任何顺序 返回答案。
+
+示例 1：
+输入：n = 4, k = 2
+输出：
+[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+
+示例 2：
+输入：n = 1, k = 1
+输出：[[1]]
+ */
+
+/**
+思路：按照每一个数选与不选画出二叉树
+
+参考题解：
+https://leetcode.cn/problems/combinations/solution/dai-ma-sui-xiang-lu-dai-ni-xue-tou-hui-s-0uql/
+https://leetcode.cn/problems/combinations/solution/hui-su-suan-fa-jian-zhi-python-dai-ma-java-dai-ma-/
+*/
 public class Combine {
 
     public List<List<Integer>> result = new ArrayList<>();
