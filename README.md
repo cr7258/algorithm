@@ -30,7 +30,7 @@
 |[206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/) | [Go](go/leetcode/linkedlist/reverse_list.go)<br> [Java](java/src/leetcode/linkedlist/ReverseList.java)  | 中等| O(n)  | O(1)   |
 |[328. 奇偶链表](https://leetcode.cn/problems/odd-even-linked-list/) | [Go](go/leetcode/linkedlist/odd_even_list.go)<br> [Java](java/src/leetcode/linkedlist/OddEvenList.java)  | 中等| O(n)  | O(1)   |
 |[19. 删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | [Go](go/leetcode/linkedlist/remove_nth_from_end.go)<br> [Java](java/src/leetcode/linkedlist/RemoveNthFromEnd.java)  | 中等| O(n)  | O(1)   |
-|[25. K 个一组翻转链表](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/) | [Go](go/leetcode/linkedlist/reverse_k_group.go)<br> [Java](java/src/leetcode/linkedlist/ReverseKGroup.java)  | 困难| O(n)  | O(1)   |
+|[25. K 个一组翻转链表](https://leetcode.cn/problems/reverse-nodes-in-k-group/) | [Go](go/leetcode/linkedlist/reverse_k_group.go)<br> [Java](java/src/leetcode/linkedlist/ReverseKGroup.java)  | 困难| O(n)  | O(1)   |
 |[160. 相交链表](https://leetcode.cn/problems/intersection-of-two-linked-lists/) | [Go](go/leetcode/linkedlist/get_intersection_node.go)<br> [Java](java/src/leetcode/linkedlist/GetIntersectionNode.java)  | 简单| O(m+n)  | O(1)   |
 |[141. 环形链表](https://leetcode.cn/problems/linked-list-cycle/) | [Go](go/leetcode/linkedlist/has_cycle.go)<br> [Java](java/src/leetcode/linkedlist/HasCycle.java)  | 简单| O(n)  | O(1)   |
 
