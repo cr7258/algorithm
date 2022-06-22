@@ -138,7 +138,8 @@
 |题目|解法|难度|时间复杂度|空间复杂度| 题型|
 |---|---|---|---|---| --- |
 |[70. 爬楼梯](https://leetcode.cn/problems/climbing-stairs/) | [Go](go/leetcode/dp/climb_stairs.go)<br> [Java](java/src/leetcode/dp/ClimbStairs.java)  | 简单| O(n)  | O(n)   |  |
-|[416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | [Go](go/leetcode/dp/can_partition.go)<br> [Java](java/src/leetcode/dp/CanPartition.java)  | 中等| O(n)  | O(n)   | 0-1 背包|
+|[416. 分割等和子集](https://leetcode.cn/problems/partition-equal-subset-sum/) | [Go](go/leetcode/dp/can_partition.go)<br> [Java](java/src/leetcode/dp/CanPartition.java)  | 中等| O(n×target)  | O(n×target) | 0-1 背包|
+|[494. 目标和](https://leetcode.cn/problems/target-sum/) | [Go](go/leetcode/dp/find_target_sum_ways.go)<br> [Java](java/src/leetcode/dp/FindTargetSumWays.java)  | 中等|  |    | 0-1 背包|
 
 ## 贪心
 题目|解法|难度|时间复杂度|空间复杂度|

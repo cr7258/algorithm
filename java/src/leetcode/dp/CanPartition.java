@@ -51,7 +51,7 @@ public class CanPartition {
         // 状态转移方程
         for(int i=1; i < n;i++){
             for(int j=0; j <= sum; j++){
-                // 装入或者不装入背包
+                // 不装或者装入背包
                 if(j - nums[i] >= 0){
                     dp[i][j] = dp[i-1][j] || dp[i-1][j-nums[i]];
                 }else{
