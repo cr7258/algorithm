@@ -52,7 +52,7 @@ func threeSum(nums []int) [][]int {
 		if i != 0 && nums[i] == nums[i-1] {
 			continue
 		}
-		//避免 j 重复，但是 j != i + 1 确保不能跳过第二个 -1，例如 [-1,-1,2]，
+		//避免 j 重复，j != i + 1 确保不能跳过第二个 -1，例如 [-1,-1,2]，
 		for j := i + 1; j < len(nums); j++ {
 			if j != i+1 && nums[j] == nums[j-1] {
 				continue

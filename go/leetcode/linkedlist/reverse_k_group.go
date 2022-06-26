@@ -49,6 +49,7 @@ func reverseKGroup(head *ListNode, k int) *ListNode {
 
 		// 处理 k 个链表
 		// 如果是 q == nil 退出的，说明剩下的几点不到 k 个，直接接到新链表后面，不反转
+		// 或者 count != k
 		if q == nil {
 			tail.Next = p
 			return newHead.Next
