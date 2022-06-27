@@ -26,9 +26,6 @@ func twoSum(nums []int, target int) []int {
 	//如果存在，将 num 的下标 i 和 target-num 的下标一起返回
 	resultMap := make(map[int]int)
 	for i, v := range nums {
-		if resultMap[target-v] != 0 {
-			return []int{i, resultMap[target-v]}
-		}
 		if j, isPresent := resultMap[target-v]; isPresent {
 			return []int{j, i}
 		}
