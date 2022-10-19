@@ -1,4 +1,6 @@
-package pure_program
+package main
+
+import "fmt"
 
 /**
  * @description 14. 最长公共前缀
@@ -22,7 +24,8 @@ package pure_program
 解释：输入不存在公共前缀。
 */
 
-/**
+/*
+*
 思路：
 1.纵向扫描时，从前往后遍历所有字符串的每一列，比较相同列上的字符是否相同，如果相同则继续对下一列进行比较，
 如果不相同则当前列不再属于公共前缀，当前列之前的部分为最长公共前缀。
@@ -35,7 +38,9 @@ func longestCommonPrefix(strs []string) string {
 	length := len(strs[0])
 	// 数组长度
 	count := len(strs)
+	// 遍历字符串的每一个字符
 	for i := 0; i < length; i++ {
+		// 遍历每个字符串，第一个字符串跳过
 		for j := 1; j < count; j++ {
 			if i == len(strs[j]) || strs[j][i] != strs[0][i] {
 				return strs[0][:i]
@@ -43,4 +48,10 @@ func longestCommonPrefix(strs []string) string {
 		}
 	}
 	return strs[0]
+}
+
+func main() {
+	strs := []string{"ab", "a"}
+	result := longestCommonPrefix(strs)
+	fmt.Println(result)
 }

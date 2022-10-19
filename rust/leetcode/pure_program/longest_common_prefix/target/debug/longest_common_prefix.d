@@ -1,0 +1,1 @@
+/Users/I576375/Code/algorithm/rust/leetcode/pure_program/longest_common_prefix/target/debug/longest_common_prefix: /Users/I576375/Code/algorithm/rust/leetcode/pure_program/longest_common_prefix/src/main.rs
