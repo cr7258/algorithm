@@ -1,4 +1,4 @@
-package pure_program
+package main
 
 import "strings"
 
