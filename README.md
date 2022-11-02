@@ -83,13 +83,14 @@
 
 
 ## 二分查找
-|题目|解法|难度|时间复杂度|空间复杂度|
-|---|---|---|---|---|
-|[704. 二分查找](https://leetcode.cn/problems/binary-search/) | [Go](go/leetcode/binary_search/search.go)<br> [Java](java/src/leetcode/binary_search/Search.java)<br>[Rust](rust/leetcode/binary_search/search/src/main.rs)  | 简单| O(logn)  | O(1)   |
-|[374. 猜数字大小](https://leetcode.cn/problems/guess-number-higher-or-lower/) | [Go](go/leetcode/binary_search/guess_number.go)<br> [Java](java/src/leetcode/binary_search/GuessNumber.java)  | 简单| O(logn)  | O(1)   |
-|[278. 第一个错误的版本](https://leetcode.cn/problems/first-bad-version/) | [Go](go/leetcode/binary_tree/first_bad_version.go)<br> [Java](java/src/leetcode/binary_tree/FirstBadVersion.java)  | 简单| O(logn)  | O(1)   |
-|[744. 寻找比目标字母大的最小字母](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) | [Go](go/leetcode/binary_search/next_greats_letter.go)<br> [Rust](rust/leetcode/binary_search/next_greats_letter/src/main.rs)  | 简单| O(logn)  | O(1)   |
-|[162. 寻找峰值](https://leetcode.cn/problems/find-peak-element/) | [Go](go/leetcode/binary_search/find_peak_element.go)<br> [Rust](rust/leetcode/binary_search/find_peak_element/src/main.rs)  | 简单| O(logn)  | O(1)   |
+|题目|解法|难度|时间复杂度|空间复杂度|题型|
+|---|---|---|---|---|---|
+|[704. 二分查找](https://leetcode.cn/problems/binary-search/) | [Go](go/leetcode/binary_search/search.go)<br> [Java](java/src/leetcode/binary_search/Search.java)<br>[Rust](rust/leetcode/binary_search/search/src/main.rs)  | 简单| O(logn)  | O(1)   ||
+|[374. 猜数字大小](https://leetcode.cn/problems/guess-number-higher-or-lower/) | [Go](go/leetcode/binary_search/guess_number.go)<br> [Java](java/src/leetcode/binary_search/GuessNumber.java)  | 简单| O(logn)  | O(1)   ||
+|[278. 第一个错误的版本](https://leetcode.cn/problems/first-bad-version/) | [Go](go/leetcode/binary_tree/first_bad_version.go)<br> [Java](java/src/leetcode/binary_tree/FirstBadVersion.java)  | 简单| O(logn)  | O(1)   ||
+|[162. 寻找峰值](https://leetcode.cn/problems/find-peak-element/) | [Go](go/leetcode/binary_search/find_peak_element.go)<br> [Rust](rust/leetcode/binary_search/find_peak_element/src/main.rs)  | 简单| O(logn)  | O(1)   ||
+|[35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/description/) | [Go](go/leetcode/binary_search/search_insert.go)<br> [Rust](rust/leetcode/binary_search/search_insert/src/main.rs)  | 简单| O(logn)  | O(1)   |查找第⼀个⼤于等于给定值的元素位置|
+|[744. 寻找比目标字母大的最小字母](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) | [Go](go/leetcode/binary_search/next_greats_letter.go)<br> [Rust](rust/leetcode/binary_search/next_greats_letter/src/main.rs)  | 简单| O(logn)  | O(1)   |查找第⼀个⼤于给定值的元素|
 
 ## 二叉树
 题目|解法|难度|时间复杂度|空间复杂度|题型|
