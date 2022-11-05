@@ -7,12 +7,11 @@ pub fn search(nums: Vec<i32>, target: i32) -> i32 {
     }
 
     while low <= high {
-        // 默认为 usize (无符号), 需要注意 right 小于 0 的情况。
         let mid = low + (high - low) / 2; // usize
         if nums[mid] == target {
             return mid as i32;
         }else if nums[mid] > target {
-            high = mid - 1;
+            high = mid - 1; // 默认为 usize (无符号), 需要注意 high 小于 0 的情况。
         }else {
             low = mid + 1;
         }
