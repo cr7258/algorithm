@@ -91,7 +91,7 @@
 |[162. 寻找峰值](https://leetcode.cn/problems/find-peak-element/) | [Go](go/leetcode/binary_search/find_peak_element.go)<br> [Rust](rust/leetcode/binary_search/find_peak_element/src/main.rs)  | 简单| O(logn)  | O(1)   ||
 |[35. 搜索插入位置](https://leetcode.cn/problems/search-insert-position/description/) | [Go](go/leetcode/binary_search/search_insert.go)<br> [Rust](rust/leetcode/binary_search/search_insert/src/main.rs)  | 简单| O(logn)  | O(1)   |查找第⼀个⼤于等于给定值的元素位置|
 |[744. 寻找比目标字母大的最小字母](https://leetcode.cn/problems/find-smallest-letter-greater-than-target/) | [Go](go/leetcode/binary_search/next_greats_letter.go)<br> [Rust](rust/leetcode/binary_search/next_greats_letter/src/main.rs)  | 简单| O(logn)  | O(1)   |查找第⼀个⼤于给定值的元素|
-|[34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/?page=2&languageTags=rust) | [Go](go/leetcode/binary_search/search_range.go)<br> [Rust](rust/leetcode/binary_search/search_range/src/main.rs)  | 简单| O(logn)  | O(1)   |查找第⼀个值等于给定值的元素，查找最后⼀个值等于给定值的元素|
+|[34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/description/?page=2&languageTags=rust) | [Go](go/leetcode/binary_search/search_range.go)<br> [Rust](rust/leetcode/binary_search/search_range/src/main.rs)  | 中等| O(logn)  | O(1)   |查找第⼀个值等于给定值的元素，查找最后⼀个值等于给定值的元素|
 
 ## 二叉树
 题目|解法|难度|时间复杂度|空间复杂度|题型|
