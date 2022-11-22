@@ -170,3 +170,8 @@
 |---|---|---|---|---|
 |[28. 实现 strStr()](https://leetcode.cn/problems/implement-strstr/) | [Go](go/leetcode/character_match/str_str.go)<br> [Java](java/src/leetcode/character_match/StrStr.java)  | 简单| |  |
 
+## 前缀和
+题目|解法|难度|时间复杂度|空间复杂度|
+|---|---|---|---|---|
+|[303. 区域和检索 - 数组不可变](https://leetcode.cn/problems/range-sum-query-immutable/description/) | [Go](go/leetcode/prefix/num_array.go)<br> [Rust](rust/leetcode/prefix/num_array/src/main.rs)  | 简单| O(1) | O(n) |
+|[304. 二维区域和检索 - 矩阵不可变](https://leetcode.cn/problems/range-sum-query-2d-immutable/description/) | [Go](go/leetcode/prefix/num_matrix.go)<br> [Rust](rust/leetcode/prefix/num_matrix/src/main.rs)  | 中等 O(1) | O(n) |
